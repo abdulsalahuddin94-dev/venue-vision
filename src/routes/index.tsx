@@ -257,6 +257,8 @@ function Index() {
           .reveal { opacity: 1; transform: none; transition: none; }
           .floaty, .blob, .spin-slow { animation: none; }
           .hero-rise { opacity: 1; animation: none; }
+          article { transition: none !important; }
+          article img { transition: none !important; }
         }
       `}</style>
 
@@ -485,19 +487,32 @@ function Index() {
               as="article"
               key={v.name}
               delay={i * 200}
-              className="group relative rounded-[2rem] bg-white shadow-[var(--shadow-soft)] transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-2xl hover:-translate-y-2"
+              className="group relative rounded-[2rem] bg-white cursor-pointer
+                shadow-[0_2px_16px_-4px_rgba(80,40,120,0.10)]
+                transition-[transform,box-shadow] duration-[220ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]
+                hover:-translate-y-3
+                hover:shadow-[0_20px_48px_-8px_rgba(80,40,120,0.22),0_4px_16px_-4px_rgba(80,40,120,0.10)]"
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-t-[2rem]">
-                <img src={v.img} alt={v.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]" />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-brand-900/10 to-transparent" />
+                <img
+                  src={v.img}
+                  alt={v.name}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover
+                    transition-transform duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)]
+                    group-hover:scale-[1.07]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-brand-900/10 to-transparent
+                  transition-opacity duration-[220ms] group-hover:from-brand-900/90" />
                 <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 text-xs font-medium text-brand-800">
                   {v.tag}
                 </span>
                 <span className="absolute top-4 right-4 px-3 py-1 rounded-full bg-brand-900/70 backdrop-blur text-xs text-white">
                   {v.price}
                 </span>
-
-                <div className="absolute inset-x-5 bottom-5 text-white">
+                <div className="absolute inset-x-5 bottom-5 text-white
+                  transition-transform duration-[220ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]
+                  group-hover:-translate-y-1">
                   <div className="text-[10px] uppercase tracking-[0.25em] text-white/80">{v.sub} · {v.city}</div>
                   <div className="mt-1 font-display text-3xl leading-tight">{v.name}</div>
                 </div>
@@ -506,8 +521,10 @@ function Index() {
                 <div className="text-sm text-brand-800/80 inline-flex items-center gap-1.5">
                   <Star className="h-4 w-4 fill-[var(--accent-sun)] text-[var(--accent-sun)]" /> 4.9 · 240+ celebrations
                 </div>
-                <a href="#" className="text-sm font-semibold text-brand-700 inline-flex items-center gap-1 group-hover:text-brand-500 group-hover:gap-2 transition-all">
-                  Book <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:rotate-45" />
+                <a href="#" className="text-sm font-semibold text-brand-700 inline-flex items-center gap-1
+                  transition-all duration-[200ms] ease-out
+                  group-hover:text-brand-500 group-hover:gap-2.5">
+                  Book <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-[200ms] group-hover:rotate-45" />
                 </a>
               </div>
             </Reveal>
