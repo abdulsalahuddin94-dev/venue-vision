@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git fetch *)",
+      "Bash(git checkout *)",
+      "Bash(git pull *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git config *)",
+      "Bash(git push *)",
+      "Bash(Get-ChildItem -Path \"D:\\\\Work\\\\Abdulrahman\\\\Work\\\\Mila\\\\landing page\\\\venue-vision-main\" -Recurse -Filter \"*.mp4\")",
+      "Bash(Get-ChildItem -Path \"D:\\\\Work\\\\Abdulrahman\\\\Work\\\\Mila\" -Recurse -Filter \"hero-bg.mp4\" -ErrorAction SilentlyContinue)",
+      "Read(//mnt/d/Work/Abdulrahman/Work/**)",
+      "Read(//mnt/c/Users/Abdulrahman/**)",
+      "Bash(git rm *)",
+      "Bash(echo \".claude/\")"
+    ]
+  }
+}
