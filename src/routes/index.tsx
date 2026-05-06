@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, type ReactNode, type CSSProperties } from "react";
 import heroImg from "@/assets/hero-celebration.jpg";
-import heroVideo from "@/assets/hero-bg.mp4.asset.json";
+import heroVideo from "@/assets/hero-bg.mp4";
 import birthdays from "@/assets/m-birthdays.jpg";
 import datenight from "@/assets/m-datenight.jpg";
 import graduations from "@/assets/m-graduations.jpg";
@@ -308,7 +308,7 @@ function Index() {
         <div className="relative max-w-[1400px] mx-auto rounded-[2.5rem] overflow-hidden text-brand-900 border border-brand-200">
           {/* Background image, faded */}
           <div className="absolute inset-0 z-0">
-            <video src={heroVideo.url} autoPlay muted playsInline preload="auto" className="absolute inset-0 h-full w-full object-cover opacity-65 bg-background" />
+            <video src={heroVideo} autoPlay muted playsInline preload="auto" className="absolute inset-0 h-full w-full object-cover opacity-65 bg-background" />
             <div className="absolute inset-0 bg-[linear-gradient(135deg,color-mix(in_oklab,var(--brand-500)_30%,transparent)_0%,color-mix(in_oklab,var(--accent-blush)_25%,transparent)_50%,color-mix(in_oklab,var(--accent-mint)_25%,transparent)_100%)]" />
             <div className="absolute inset-0 bg-[radial-gradient(50%_40%_at_85%_20%,_var(--accent-sun)_0%,_transparent_70%),radial-gradient(40%_35%_at_10%_85%,_var(--brand-300)_0%,_transparent_70%)] opacity-25" />
             {/* Readability scrim — soft vignette behind copy */}
