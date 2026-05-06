@@ -485,10 +485,10 @@ function Index() {
               as="article"
               key={v.name}
               delay={i * 200}
-              className="group relative rounded-[2rem] overflow-hidden bg-white shadow-[var(--shadow-soft)] [transition:transform_900ms_cubic-bezier(0.22,1,0.36,1),box-shadow_900ms_cubic-bezier(0.22,1,0.36,1)] will-change-transform hover:shadow-xl hover:-translate-y-1.5"
+              className="group relative rounded-[2rem] bg-white shadow-[var(--shadow-soft)] transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:shadow-2xl hover:-translate-y-2"
             >
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <img src={v.img} alt={v.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover [transition:transform_1600ms_cubic-bezier(0.22,1,0.36,1)] will-change-transform group-hover:scale-[1.06]" />
+              <div className="relative aspect-[4/5] overflow-hidden rounded-t-[2rem]">
+                <img src={v.img} alt={v.name} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-brand-900/10 to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 text-xs font-medium text-brand-800">
                   {v.tag}
