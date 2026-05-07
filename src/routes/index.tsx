@@ -1,34 +1,32 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, type ReactNode, type CSSProperties } from "react";
-import heroImg from "@/assets/hero-celebration.jpg";
 import heroVideo from "@/assets/hero-bg.mp4";
-import birthdays from "@/assets/m-birthdays.jpg";
-import datenight from "@/assets/m-datenight.jpg";
-import graduations from "@/assets/m-graduations.jpg";
-import proposals from "@/assets/m-proposals.jpg";
-import gatherings from "@/assets/m-gatherings.jpg";
-import velvet from "@/assets/m-velvet.jpg";
-import featuredTonight from "@/assets/m-featured-tonight.jpg";
-import garden from "@/assets/m-garden.jpg";
-import skyline from "@/assets/m-skyline.jpg";
 import phone from "@/assets/m-phone.png";
-import exclusivity from "@/assets/m-exclusivity.jpg";
+
+const IMG = {
+  birthdays:      "https://images.unsplash.com/photo-1577998474517-7eeeed4e448a?auto=format&fit=crop&w=800&q=80",
+  datenight:      "https://images.unsplash.com/photo-1639244132045-94c307ff4bfc?auto=format&fit=crop&w=800&q=80",
+  graduations:    "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80",
+  proposals:      "https://images.unsplash.com/photo-1542810185-a9c0362dcff4?auto=format&fit=crop&w=800&q=80",
+  gatherings:     "https://images.unsplash.com/photo-1519671282429-b44660ead0a7?auto=format&fit=crop&w=800&q=80",
+  velvet:         "https://images.unsplash.com/photo-1647905555465-0f9004fbdaed?auto=format&fit=crop&w=800&q=80",
+  garden:         "https://images.unsplash.com/photo-1744330311965-ca7342d73512?auto=format&fit=crop&w=800&q=80",
+  skyline:        "https://images.unsplash.com/photo-1621275471769-e6aa344546d5?auto=format&fit=crop&w=800&q=80",
+  featuredTonight:"https://images.unsplash.com/photo-1746739802530-b490abdfc8e6?auto=format&fit=crop&w=800&q=80",
+  exclusivity:    "https://images.unsplash.com/photo-1707707178897-9fd07c943d30?auto=format&fit=crop&w=800&q=80",
+};
 import avatar1 from "@/assets/avatar-1.jpg";
 import avatar2 from "@/assets/avatar-2.jpg";
 import avatar3 from "@/assets/avatar-3.jpg";
 import { Button } from "@/components/ui/button";
 import {
   Sparkles,
-  Apple,
-  Play,
   Star,
   ArrowUpRight,
   Heart,
   Zap,
   MapPin,
-  Quote,
   UserRound,
-  ShoppingBag,
   CheckCircle2,
   Headphones,
   Clock,
@@ -46,17 +44,17 @@ export const Route = createFileRoute("/")({
 });
 
 const moments = [
-  { label: "Birthdays", img: birthdays, tag: "01", hue: "var(--accent-sun)" },
-  { label: "Date Nights", img: datenight, tag: "02", hue: "var(--brand-300)" },
-  { label: "Graduations", img: graduations, tag: "03", hue: "var(--accent-sky)" },
-  { label: "Proposals", img: proposals, tag: "04", hue: "var(--accent-violet)" },
-  { label: "Gatherings", img: gatherings, tag: "05", hue: "var(--accent-mint)" },
+  { label: "Birthdays",   img: IMG.birthdays,   tag: "01", hue: "var(--accent-sun)" },
+  { label: "Date Nights", img: IMG.datenight,   tag: "02", hue: "var(--brand-300)" },
+  { label: "Graduations", img: IMG.graduations, tag: "03", hue: "var(--accent-sky)" },
+  { label: "Proposals",   img: IMG.proposals,   tag: "04", hue: "var(--accent-violet)" },
+  { label: "Gatherings",  img: IMG.gatherings,  tag: "05", hue: "var(--accent-mint)" },
 ];
 
 const venues = [
-  { tag: "Luxury", name: "The Velvet Room", sub: "Fine Dining", img: velvet, city: "Downtown", price: "$$$" },
-  { tag: "Family", name: "Garden Lane Café", sub: "Café & Brunch", img: garden, city: "Old Town", price: "$$" },
-  { tag: "Romantic", name: "Skyline Terrace", sub: "Rooftop Bar", img: skyline, city: "Midtown", price: "$$$" },
+  { tag: "Luxury",   name: "The Velvet Room",  sub: "Fine Dining",  img: IMG.velvet,  city: "Riyadh",  price: "$$$" },
+  { tag: "Family",   name: "Garden Lane Café", sub: "Café & Brunch", img: IMG.garden,  city: "Al Olaya", price: "$$" },
+  { tag: "Romantic", name: "Skyline Terrace",  sub: "Rooftop Bar",  img: IMG.skyline, city: "KAFD",     price: "$$$" },
 ];
 
 const steps = [
@@ -312,8 +310,7 @@ function Index() {
             <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Event Supplies</a>
             <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Categories</a>
             <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Products</a>
-            <a href="https://milacelebrations.com/en/join-as-vendor" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Join as Vendor</a>
-            <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
+<a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
           </nav>
           <div className="flex items-center gap-6 text-brand-900">
             <button className="hidden sm:inline-flex items-center gap-2 text-[15px] font-medium hover:text-brand-600 transition-colors">
@@ -327,9 +324,6 @@ function Index() {
             </div>
             <button aria-label="Wishlist" className="hover:text-brand-600 transition-colors">
               <Heart className="h-6 w-6" strokeWidth={1.75} />
-            </button>
-            <button aria-label="Cart" className="hover:text-brand-600 transition-colors">
-              <ShoppingBag className="h-6 w-6" strokeWidth={1.75} />
             </button>
             <a
               href={APP_STORE_URL}
@@ -400,7 +394,7 @@ function Index() {
             <div className="md:col-span-4 space-y-4 md:pl-6 w-full self-end">
               {/* Featured venue card */}
               <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-elegant)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-2xl floaty aspect-[4/5]">
-                <img src={featuredTonight} alt="Skyline Proposal Experience" className="absolute inset-0 h-full w-full object-cover" />
+                <img src={IMG.featuredTonight} alt="Skyline Proposal Experience" className="absolute inset-0 h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-900/40 via-transparent to-transparent" />
 
                 {/* Glass info tile */}
@@ -409,7 +403,7 @@ function Index() {
                     <div className="min-w-0">
                       <div className="text-[10px] uppercase tracking-[0.25em] text-white/80 font-semibold">Recently Booked</div>
                       <div className="font-display text-xl mt-1 leading-tight truncate">Skyline Proposal Experience</div>
-                      <div className="text-xs text-white/75 mt-1">New York · 2 minutes ago</div>
+                      <div className="text-xs text-white/75 mt-1">Riyadh · 2 minutes ago</div>
                     </div>
                     <div className="flex shrink-0 items-center gap-0.5 pt-1">
                       {Array.from({ length: 5 }).map((_, i) => (
@@ -649,7 +643,7 @@ function Index() {
           <Reveal className="relative">
             <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5]">
               <img
-                src={exclusivity}
+                src={IMG.exclusivity}
                 alt="Friends celebrating at an exclusive venue"
                 loading="lazy"
                 width={1024}
