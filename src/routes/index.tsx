@@ -729,7 +729,7 @@ function Index() {
                 </a>
               ))}
             </div>
-            <div className="mt-8 border-t border-white/15 pt-6 flex flex-nowrap items-center justify-center gap-x-6 gap-y-4 text-[14px] text-white/85">
+            <div className="mt-8 border-t border-white/15 pt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[14px] text-white/85">
               <div className="flex items-center gap-3">
                 <img src={commercialRegister} alt="Saudi Commercial Register" className="h-10 w-10 object-contain" />
                 <div className="text-left">
