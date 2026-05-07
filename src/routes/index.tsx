@@ -668,17 +668,17 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 pb-20">
-        <div className="relative max-w-[1400px] mx-auto rounded-[2.5rem] overflow-hidden bg-brand-100 border border-brand-200">
+      <section className="px-4 sm:px-6 pb-16 sm:pb-20">
+        <div className="relative max-w-[1400px] mx-auto rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden bg-brand-100 border border-brand-200">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-100)_0%,var(--accent-blush)_45%,var(--accent-mint)_100%)] opacity-90" />
           
           <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-[var(--brand-300)]/50 blur-3xl blob" style={{ animationDelay: "-7s" }} />
 
 
-          <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-8 md:px-16 py-20 text-brand-900">
+          <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-6 sm:px-8 md:px-16 py-14 sm:py-20 text-brand-900">
             <Reveal>
               <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Your moment, one tap away</span>
-              <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px] tracking-tight">
+              <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
                 Download Mila.<br />
                 <span className="italic text-brand-500">Book the moment.</span>
               </h2>
@@ -690,7 +690,7 @@ function Index() {
                 <Zap className="h-4 w-4 text-brand-600" /> Instant confirmation · No account required to browse
               </div>
             </Reveal>
-            <div className="relative h-[420px] md:h-[520px]">
+            <div className="relative h-[340px] sm:h-[420px] md:h-[520px]">
               <img src={phone} alt="Mila app preview" loading="lazy" className="absolute inset-0 m-auto h-full w-auto drop-shadow-2xl floaty" />
             </div>
           </div>
