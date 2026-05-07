@@ -262,7 +262,7 @@ function Index() {
 
       {/* NAV */}
       <header className="relative z-20 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 py-5 flex items-center justify-between gap-6">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3 sm:gap-6">
           <Logo />
           <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-brand-900">
             <a href="#" className="relative text-brand-600">
@@ -274,7 +274,7 @@ function Index() {
             <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Products</a>
 <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
           </nav>
-          <div className="flex items-center gap-6 text-brand-900">
+          <div className="flex items-center gap-3 sm:gap-6 text-brand-900">
             <button className="hidden sm:inline-flex items-center gap-2 text-[15px] font-medium hover:text-brand-600 transition-colors">
               <UserRound className="h-5 w-5" strokeWidth={1.75} />
               Sign In
@@ -285,7 +285,7 @@ function Index() {
               <button className="text-muted-foreground hover:text-brand-900 transition-colors">Ar</button>
             </div>
             <button aria-label="Wishlist" className="hover:text-brand-600 transition-colors">
-              <Heart className="h-6 w-6" strokeWidth={1.75} />
+              <Heart className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
             </button>
             <a
               href={APP_STORE_URL}
@@ -311,7 +311,7 @@ function Index() {
             <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_25%_55%,rgba(255,255,255,0.55)_0%,transparent_70%)]" />
           </div>
 
-          <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-14 md:pt-20 pb-16 md:pb-20 grid md:grid-cols-12 gap-10 items-end">
+          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-10 sm:pt-14 md:pt-20 pb-12 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-8 md:gap-10 items-end">
             {/* Left: headline */}
             <div className="md:col-span-8">
               <span className="hero-rise inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-medium text-brand-900 border border-white/80 shadow-sm" style={{ animationDelay: "80ms" }}>
@@ -319,7 +319,7 @@ function Index() {
                 The celebration booking app
               </span>
 
-              <h1 className="hero-rise mt-7 font-display tracking-[-0.02em] text-[72px] font-extrabold leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
+              <h1 className="hero-rise mt-6 sm:mt-7 font-display tracking-[-0.02em] text-[40px] sm:text-[56px] md:text-[64px] lg:text-[72px] font-extrabold leading-[1.1] md:leading-[1.15] lg:leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
                 Book your perfect{" "}
                 <span className="italic text-brand-600">celebration</span>{" "}
                 in seconds.
@@ -409,11 +409,11 @@ function Index() {
       </section>
 
       {/* MOMENTS — asymmetric */}
-      <section id="moments" className="relative max-w-[1400px] mx-auto px-6 py-28">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
+      <section id="moments" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
+        <div className="flex flex-wrap items-end justify-between gap-6 mb-10 md:mb-12">
           <Reveal>
             <span className="text-xs uppercase tracking-[0.3em] text-brand-600">A moment for everything</span>
-            <h2 className="mt-3 font-display text-[56px] font-bold leading-[60px] tracking-tight">
+            <h2 className="mt-3 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               What are we<br />
               <span className="italic text-brand-500">celebrating?</span>
             </h2>
@@ -461,11 +461,11 @@ function Index() {
       </section>
 
       {/* VENUES */}
-      <section id="venues" className="relative max-w-[1400px] mx-auto px-6 py-28">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
+      <section id="venues" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
+        <div className="flex items-end justify-between flex-wrap gap-6 mb-10 md:mb-12">
           <Reveal>
             <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Hand-picked spots</span>
-            <h2 className="mt-3 font-display text-[56px] font-bold leading-[60px] tracking-tight">
+            <h2 className="mt-3 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               Places that<br />
               <span className="italic text-brand-500">already get it.</span>
             </h2>
@@ -528,18 +528,18 @@ function Index() {
         <div className="absolute -bottom-40 -right-32 h-[520px] w-[520px] rounded-full bg-[var(--accent-mint)]/40 blur-[120px]" />
         <div className="absolute inset-0 opacity-[0.08] [background-image:radial-gradient(var(--brand-400)_1px,transparent_1px)] [background-size:22px_22px]" />
 
-        <div className="relative max-w-[1400px] mx-auto px-6 py-28">
+        <div className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
           <Reveal className="max-w-3xl">
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-brand-600">
               <span className="h-px w-8 bg-brand-400" /> How Mila works
             </span>
-            <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px]">
+            <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px]">
               From craving to{" "}
               <span className="italic text-brand-500">celebrating</span>
               <br />
               in under a minute.
             </h2>
-            <p className="mt-6 text-brand-800/70 max-w-xl text-lg">
+            <p className="mt-6 text-brand-800/70 max-w-xl text-base sm:text-lg">
               Three taps. Zero spreadsheets. We turned the months-long planning circus into a 45-second flow.
             </p>
           </Reveal>
@@ -575,7 +575,7 @@ function Index() {
             </ol>
           </div>
 
-          <Reveal delay={400} className="mt-16 flex flex-wrap items-center justify-between gap-6 rounded-3xl bg-white border border-brand-200 px-8 py-6">
+          <Reveal delay={400} className="mt-16 flex flex-wrap items-center justify-between gap-6 rounded-3xl bg-white border border-brand-200 px-6 sm:px-8 py-6">
             <div className="flex items-center gap-4">
               <div className="flex -space-x-3">
                 {[avatar1, avatar2, avatar3].map((src, i) => (
@@ -595,8 +595,8 @@ function Index() {
       </section>
 
 
-      <section className="px-6 py-28">
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <section className="px-5 sm:px-6 py-16 sm:py-20 md:py-28">
+        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
           <Reveal className="relative">
             <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5]">
               <img
@@ -626,7 +626,7 @@ function Index() {
 
           <Reveal delay={120}>
             <span className="text-xs uppercase tracking-[0.3em] text-brand-600 font-semibold">Exclusivity</span>
-            <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px] tracking-tight">
+            <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               Built for moments,{" "}
               <span className="italic text-brand-300">not for stress.</span>
             </h2>
@@ -668,17 +668,17 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 pb-20">
-        <div className="relative max-w-[1400px] mx-auto rounded-[2.5rem] overflow-hidden bg-brand-100 border border-brand-200">
+      <section className="px-4 sm:px-6 pb-16 sm:pb-20">
+        <div className="relative max-w-[1400px] mx-auto rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden bg-brand-100 border border-brand-200">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-100)_0%,var(--accent-blush)_45%,var(--accent-mint)_100%)] opacity-90" />
           
           <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-[var(--brand-300)]/50 blur-3xl blob" style={{ animationDelay: "-7s" }} />
 
 
-          <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-8 md:px-16 py-20 text-brand-900">
+          <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-6 sm:px-8 md:px-16 py-14 sm:py-20 text-brand-900">
             <Reveal>
               <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Your moment, one tap away</span>
-              <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px] tracking-tight">
+              <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
                 Download Mila.<br />
                 <span className="italic text-brand-500">Book the moment.</span>
               </h2>
@@ -690,7 +690,7 @@ function Index() {
                 <Zap className="h-4 w-4 text-brand-600" /> Instant confirmation · No account required to browse
               </div>
             </Reveal>
-            <div className="relative h-[420px] md:h-[520px]">
+            <div className="relative h-[340px] sm:h-[420px] md:h-[520px]">
               <img src={phone} alt="Mila app preview" loading="lazy" className="absolute inset-0 m-auto h-full w-auto drop-shadow-2xl floaty" />
             </div>
           </div>
@@ -699,7 +699,7 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="bg-brand-900 text-white">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16 grid md:grid-cols-3 gap-12 items-start">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-10 py-12 sm:py-16 grid md:grid-cols-3 gap-10 md:gap-12 items-start">
           <div>
             <Logo light />
             <div className="mt-8 space-y-1 text-[15px] text-white/85 leading-relaxed">
@@ -729,7 +729,7 @@ function Index() {
                 </a>
               ))}
             </div>
-            <div className="mt-8 border-t border-white/15 pt-6 flex flex-nowrap items-center justify-center gap-x-6 gap-y-4 text-[14px] text-white/85">
+            <div className="mt-8 border-t border-white/15 pt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[14px] text-white/85">
               <div className="flex items-center gap-3">
                 <img src={commercialRegister} alt="Saudi Commercial Register" className="h-10 w-10 object-contain" />
                 <div className="text-left">
@@ -747,7 +747,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="flex md:justify-end">
+          <div className="flex justify-center md:justify-end">
             <div className="flex flex-col gap-4 w-full max-w-[220px]">
               <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="block transition hover:opacity-90">
                 <img src={btnAppStore} alt="Download on the App Store" className="w-full h-auto" />
