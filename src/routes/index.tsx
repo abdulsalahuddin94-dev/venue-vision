@@ -511,15 +511,10 @@ function Index() {
                   <div className="mt-1 font-display text-3xl leading-tight">{v.name}</div>
                 </div>
               </div>
-              <div className="flex items-center justify-between p-5">
+              <div className="flex items-center p-5">
                 <div className="text-sm text-brand-800/80 inline-flex items-center gap-1.5">
                   <Star className="h-4 w-4 fill-[var(--accent-sun)] text-[var(--accent-sun)]" /> 4.9 · 240+ celebrations
                 </div>
-                <a href="#" className="text-sm font-semibold text-brand-700 inline-flex items-center gap-1
-                  transition-all duration-[200ms] ease-out
-                  group-hover:text-brand-500 group-hover:gap-2.5">
-                  Book <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-[200ms] group-hover:rotate-45" />
-                </a>
               </div>
             </Reveal>
           ))}
