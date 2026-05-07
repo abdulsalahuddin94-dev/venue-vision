@@ -311,7 +311,7 @@ function Index() {
             <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_25%_55%,rgba(255,255,255,0.55)_0%,transparent_70%)]" />
           </div>
 
-          <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-14 md:pt-20 pb-16 md:pb-20 grid md:grid-cols-12 gap-10 items-end">
+          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-10 sm:pt-14 md:pt-20 pb-12 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-8 md:gap-10 items-end">
             {/* Left: headline */}
             <div className="md:col-span-8">
               <span className="hero-rise inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-medium text-brand-900 border border-white/80 shadow-sm" style={{ animationDelay: "80ms" }}>
@@ -319,7 +319,7 @@ function Index() {
                 The celebration booking app
               </span>
 
-              <h1 className="hero-rise mt-7 font-display tracking-[-0.02em] text-[72px] font-extrabold leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
+              <h1 className="hero-rise mt-6 sm:mt-7 font-display tracking-[-0.02em] text-[40px] sm:text-[56px] md:text-[64px] lg:text-[72px] font-extrabold leading-[1.1] md:leading-[1.15] lg:leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
                 Book your perfect{" "}
                 <span className="italic text-brand-600">celebration</span>{" "}
                 in seconds.
