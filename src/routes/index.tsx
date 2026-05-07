@@ -262,7 +262,7 @@ function Index() {
 
       {/* NAV */}
       <header className="relative z-20 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 py-5 flex items-center justify-between gap-6">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3 sm:gap-6">
           <Logo />
           <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-brand-900">
             <a href="#" className="relative text-brand-600">
