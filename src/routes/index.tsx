@@ -319,7 +319,7 @@ function Index() {
                 The celebration booking app
               </span>
 
-              <h1 className="hero-rise mt-7 font-display tracking-[-0.02em] leading-[0.95] text-[clamp(2.75rem,7vw,7rem)] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
+              <h1 className="hero-rise mt-7 font-display tracking-[-0.02em] text-[72px] font-extrabold leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
                 Book your perfect{" "}
                 <span className="italic text-brand-600">celebration</span>{" "}
                 in seconds.
@@ -413,7 +413,7 @@ function Index() {
         <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
           <Reveal>
             <span className="text-xs uppercase tracking-[0.3em] text-brand-600">A moment for everything</span>
-            <h2 className="mt-3 font-display text-5xl md:text-7xl tracking-tight leading-[0.95]">
+            <h2 className="mt-3 font-display text-[56px] font-bold leading-[60px] tracking-tight">
               What are we<br />
               <span className="italic text-brand-500">celebrating?</span>
             </h2>
@@ -465,7 +465,7 @@ function Index() {
         <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
           <Reveal>
             <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Hand-picked spots</span>
-            <h2 className="mt-3 font-display text-5xl md:text-7xl tracking-tight leading-[0.95]">
+            <h2 className="mt-3 font-display text-[56px] font-bold leading-[60px] tracking-tight">
               Places that<br />
               <span className="italic text-brand-500">already get it.</span>
             </h2>
@@ -533,7 +533,7 @@ function Index() {
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-brand-600">
               <span className="h-px w-8 bg-brand-400" /> How Mila works
             </span>
-            <h2 className="mt-4 font-display text-5xl md:text-7xl leading-[0.95]">
+            <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px]">
               From craving to{" "}
               <span className="italic text-brand-500">celebrating</span>
               <br />
@@ -626,7 +626,7 @@ function Index() {
 
           <Reveal delay={120}>
             <span className="text-xs uppercase tracking-[0.3em] text-brand-600 font-semibold">Exclusivity</span>
-            <h2 className="mt-4 font-display text-5xl md:text-6xl lg:text-7xl tracking-tight leading-[0.95]">
+            <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px] tracking-tight">
               Built for moments,{" "}
               <span className="italic text-brand-300">not for stress.</span>
             </h2>
@@ -678,7 +678,7 @@ function Index() {
           <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-8 md:px-16 py-20 text-brand-900">
             <Reveal>
               <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Your moment, one tap away</span>
-              <h2 className="mt-4 font-display text-5xl md:text-7xl tracking-tight leading-[0.95]">
+              <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px] tracking-tight">
                 Download Mila.<br />
                 <span className="italic text-brand-500">Book the moment.</span>
               </h2>
