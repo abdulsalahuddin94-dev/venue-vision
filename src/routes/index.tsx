@@ -626,7 +626,7 @@ function Index() {
 
           <Reveal delay={120}>
             <span className="text-xs uppercase tracking-[0.3em] text-brand-600 font-semibold">Exclusivity</span>
-            <h2 className="mt-4 font-display text-[56px] font-bold leading-[60px] tracking-tight">
+            <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               Built for moments,{" "}
               <span className="italic text-brand-300">not for stress.</span>
             </h2>
