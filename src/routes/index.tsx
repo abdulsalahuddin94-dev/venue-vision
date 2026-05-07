@@ -274,7 +274,7 @@ function Index() {
             <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Products</a>
 <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
           </nav>
-          <div className="flex items-center gap-6 text-brand-900">
+          <div className="flex items-center gap-3 sm:gap-6 text-brand-900">
             <button className="hidden sm:inline-flex items-center gap-2 text-[15px] font-medium hover:text-brand-600 transition-colors">
               <UserRound className="h-5 w-5" strokeWidth={1.75} />
               Sign In
@@ -285,7 +285,7 @@ function Index() {
               <button className="text-muted-foreground hover:text-brand-900 transition-colors">Ar</button>
             </div>
             <button aria-label="Wishlist" className="hover:text-brand-600 transition-colors">
-              <Heart className="h-6 w-6" strokeWidth={1.75} />
+              <Heart className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
             </button>
             <a
               href={APP_STORE_URL}
