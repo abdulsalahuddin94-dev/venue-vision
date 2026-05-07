@@ -676,7 +676,7 @@ function Index() {
       <section className="px-6 pb-20">
         <div className="relative max-w-[1400px] mx-auto rounded-[2.5rem] overflow-hidden bg-brand-100 border border-brand-200">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-100)_0%,var(--accent-blush)_45%,var(--accent-mint)_100%)] opacity-90" />
-          <div className="absolute -top-32 -right-24 h-96 w-96 rounded-full bg-[var(--accent-sun)]/40 blur-3xl blob" />
+          
           <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-[var(--brand-300)]/50 blur-3xl blob" style={{ animationDelay: "-7s" }} />
 
 
