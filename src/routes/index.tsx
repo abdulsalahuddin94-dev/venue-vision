@@ -12,7 +12,7 @@ const IMG = {
   velvet:         "https://images.unsplash.com/photo-1616669944447-d65d41a222bd?auto=format&fit=crop&w=800&q=80",
   garden:         "https://images.unsplash.com/photo-1744330311965-ca7342d73512?auto=format&fit=crop&w=800&q=80",
   skyline:        "https://images.unsplash.com/photo-1621275471769-e6aa344546d5?auto=format&fit=crop&w=800&q=80",
-  featuredTonight:"https://images.unsplash.com/photo-1746739802530-b490abdfc8e6?auto=format&fit=crop&w=800&q=80",
+  featuredTonight:"https://images.unsplash.com/photo-1669524472809-fabe465ec45e?auto=format&fit=crop&w=800&q=80",
   exclusivity:    "https://images.unsplash.com/photo-1777915392856-e1e5c46de326?auto=format&fit=crop&w=800&q=80",
 };
 import avatar1 from "@/assets/avatar-1.jpg";
