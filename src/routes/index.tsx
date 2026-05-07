@@ -699,7 +699,7 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="bg-brand-900 text-white">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16 grid md:grid-cols-3 gap-12 items-start">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-10 py-12 sm:py-16 grid md:grid-cols-3 gap-10 md:gap-12 items-start">
           <div>
             <Logo light />
             <div className="mt-8 space-y-1 text-[15px] text-white/85 leading-relaxed">
