@@ -260,14 +260,8 @@ function Index() {
         }
       `}</style>
 
-      {/* Aurora — fixed glow layer, behind everything */}
-      <div aria-hidden="true" className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: -1 }}>
-        <div className="aurora-blob aurora-blob-1" />
-        <div className="aurora-blob aurora-blob-2" />
-      </div>
-
       {/* NAV */}
-      <header className="relative z-20">
+      <header className="relative z-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 py-5 flex items-center justify-between gap-6">
           <Logo />
           <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-brand-900">
