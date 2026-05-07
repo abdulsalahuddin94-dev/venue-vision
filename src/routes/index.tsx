@@ -9,11 +9,11 @@ const IMG = {
   graduations:    "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80",
   proposals:      "https://images.unsplash.com/photo-1542810185-a9c0362dcff4?auto=format&fit=crop&w=800&q=80",
   gatherings:     "https://images.unsplash.com/photo-1519671282429-b44660ead0a7?auto=format&fit=crop&w=800&q=80",
-  velvet:         "https://images.unsplash.com/photo-1647905555465-0f9004fbdaed?auto=format&fit=crop&w=800&q=80",
+  velvet:         "https://images.unsplash.com/photo-1616669944447-d65d41a222bd?auto=format&fit=crop&w=800&q=80",
   garden:         "https://images.unsplash.com/photo-1744330311965-ca7342d73512?auto=format&fit=crop&w=800&q=80",
   skyline:        "https://images.unsplash.com/photo-1621275471769-e6aa344546d5?auto=format&fit=crop&w=800&q=80",
   featuredTonight:"https://images.unsplash.com/photo-1746739802530-b490abdfc8e6?auto=format&fit=crop&w=800&q=80",
-  exclusivity:    "https://images.unsplash.com/photo-1707707178897-9fd07c943d30?auto=format&fit=crop&w=800&q=80",
+  exclusivity:    "https://images.unsplash.com/photo-1746739802530-b490abdfc8e6?auto=format&fit=crop&w=800&q=80",
 };
 import avatar1 from "@/assets/avatar-1.jpg";
 import avatar2 from "@/assets/avatar-2.jpg";
