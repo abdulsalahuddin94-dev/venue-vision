@@ -251,55 +251,17 @@ function Index() {
           filter: drop-shadow(0 25px 35px rgba(0,0,0,0.25)) drop-shadow(0 10px 15px rgba(0,0,0,0.15));
         }
 
-        /* ── Aurora background blobs ── */
-        .aurora-blob {
-          position: absolute;
-          width: 55vw;
-          height: 55vw;
-          border-radius: 50%;
-          filter: blur(250px);
-          will-change: transform;
-        }
-        .aurora-blob-1 {
-          background: #B786FF;
-          opacity: 0.30;
-          top: -18vw;
-          left: -12vw;
-          animation: aurora-drift-1 15s ease-in-out infinite;
-        }
-        .aurora-blob-2 {
-          background: #E8AA4E;
-          opacity: 0.15;
-          bottom: -18vw;
-          right: -12vw;
-          animation: aurora-drift-2 14s ease-in-out infinite;
-        }
-        @keyframes aurora-drift-1 {
-          0%,100% { transform: translate(0,0) scale(1); }
-          50%      { transform: translate(4vw,3vw) scale(1.08); }
-        }
-        @keyframes aurora-drift-2 {
-          0%,100% { transform: translate(0,0) scale(1.08); }
-          50%      { transform: translate(-4vw,-3vw) scale(1); }
-        }
-
         @media (prefers-reduced-motion: reduce) {
           .reveal { opacity: 1; transform: none; transition: none; }
-          .floaty, .blob, .spin-slow, .aurora-blob { animation: none; }
+          .floaty, .blob, .spin-slow { animation: none; }
           .hero-rise { opacity: 1; animation: none; }
           article { transition: none !important; }
           article img { transition: none !important; }
         }
       `}</style>
 
-      {/* Aurora — fixed glow layer, behind everything */}
-      <div aria-hidden="true" className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: -1 }}>
-        <div className="aurora-blob aurora-blob-1" />
-        <div className="aurora-blob aurora-blob-2" />
-      </div>
-
       {/* NAV */}
-      <header className="relative z-20">
+      <header className="relative z-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 py-5 flex items-center justify-between gap-6">
           <Logo />
           <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-brand-900">
