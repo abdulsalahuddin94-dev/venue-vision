@@ -330,19 +330,19 @@ function Index() {
               </p>
 
               {/* App store buttons */}
-              <div className="hero-rise mt-9 flex flex-wrap items-center gap-3" style={{ animationDelay: "560ms" }}>
-                <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 rounded-[8px] px-5 py-3 bg-brand-900 text-white hover:bg-brand-800 transition shadow-[var(--shadow-elegant)] ring-1 ring-white/20">
-                  <img src={appleLogo} alt="" aria-hidden className="h-7 w-7 object-contain" />
+              <div className="hero-rise mt-9 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:items-center" style={{ animationDelay: "560ms" }}>
+                <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex w-full sm:w-auto items-center justify-center gap-2 sm:gap-3 rounded-[8px] px-3 py-2.5 sm:px-5 sm:py-3 bg-brand-900 text-white hover:bg-brand-800 transition shadow-[var(--shadow-elegant)] ring-1 ring-white/20">
+                  <img src={appleLogo} alt="" aria-hidden className="h-6 w-6 sm:h-7 sm:w-7 shrink-0 object-contain" />
                   <span className="text-left leading-tight">
-                    <span className="block text-[10px] uppercase tracking-wider opacity-70">Download on the</span>
-                    <span className="block text-base font-semibold">App Store</span>
+                    <span className="block text-[9px] sm:text-[10px] uppercase tracking-wider opacity-70">Download on the</span>
+                    <span className="block text-sm sm:text-base font-semibold whitespace-nowrap">App Store</span>
                   </span>
                 </a>
-                <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 rounded-[8px] px-5 py-3 bg-brand-900 text-white hover:bg-brand-800 transition shadow-[var(--shadow-elegant)] ring-1 ring-white/20">
-                  <img src={googlePlayLogo} alt="" aria-hidden className="h-7 w-7 object-contain" />
+                <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className="group inline-flex w-full sm:w-auto items-center justify-center gap-2 sm:gap-3 rounded-[8px] px-3 py-2.5 sm:px-5 sm:py-3 bg-brand-900 text-white hover:bg-brand-800 transition shadow-[var(--shadow-elegant)] ring-1 ring-white/20">
+                  <img src={googlePlayLogo} alt="" aria-hidden className="h-6 w-6 sm:h-7 sm:w-7 shrink-0 object-contain" />
                   <span className="text-left leading-tight">
-                    <span className="block text-[10px] uppercase tracking-wider opacity-70">Get it on</span>
-                    <span className="block text-base font-semibold">Google Play</span>
+                    <span className="block text-[9px] sm:text-[10px] uppercase tracking-wider opacity-70">Get it on</span>
+                    <span className="block text-sm sm:text-base font-semibold whitespace-nowrap">Google Play</span>
                   </span>
                 </a>
               </div>
