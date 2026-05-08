@@ -482,7 +482,7 @@ function Index() {
             </h2>
           </Reveal>
           <Reveal delay={150}>
-            <p className="max-w-sm text-brand-800/70">
+            <p className="max-w-sm text-sm sm:text-base text-brand-800/70">
               Every category is a hand-picked playbook of venues, menus and surprises designed for that exact kind of night.
             </p>
           </Reveal>
