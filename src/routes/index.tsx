@@ -607,7 +607,7 @@ function Index() {
             </p>
           </Reveal>
 
-          <div className="relative mt-10 sm:mt-20">
+          <div className="relative mt-6 sm:mt-20">
             <div className="hidden md:block absolute top-12 left-[8%] right-[8%] h-px bg-gradient-to-r from-transparent via-brand-300 to-transparent" />
 
             <ol className="grid grid-cols-3 gap-2 sm:gap-6 md:gap-6 items-stretch">
@@ -624,7 +624,7 @@ function Index() {
                       </div>
                     </div>
 
-                    <div className="mt-3 sm:mt-8 flex-1 rounded-2xl sm:rounded-3xl bg-white border border-brand-200 p-3 sm:p-7 transition-all duration-500 group-hover:shadow-[var(--shadow-soft)] group-hover:-translate-y-1 text-center">
+                    <div className="mt-2 sm:mt-8 flex-1 rounded-2xl sm:rounded-3xl bg-white border border-brand-200 p-3 sm:p-7 transition-all duration-500 group-hover:shadow-[var(--shadow-soft)] group-hover:-translate-y-1 text-center">
                       <div className="flex items-center gap-1 sm:gap-2 justify-center text-[8px] sm:text-[10px] uppercase tracking-[0.18em] sm:tracking-[0.28em] text-brand-600 font-semibold">
                         <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 rounded-full bg-brand-500" />
                         <span className="truncate">Step {s.n} · {s.time}</span>
@@ -638,7 +638,7 @@ function Index() {
             </ol>
           </div>
 
-          <Reveal delay={400} className="mt-16 flex flex-wrap items-center justify-between gap-6 rounded-3xl bg-white border border-brand-200 px-6 sm:px-8 py-6">
+          <Reveal delay={400} className="mt-8 sm:mt-16 flex flex-wrap items-center justify-between gap-4 sm:gap-6 rounded-3xl bg-white border border-brand-200 px-5 sm:px-8 py-5 sm:py-6">
             <div className="flex items-center gap-4">
               <div className="flex -space-x-3">
                 {[avatar1, avatar2, avatar3].map((src, i) => (
