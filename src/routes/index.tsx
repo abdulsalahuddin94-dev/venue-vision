@@ -280,36 +280,97 @@ function Index() {
               Home
               <span className="absolute -bottom-2 left-0 right-0 h-[2px] rounded-full bg-brand-600" />
             </a>
+      {/* NAV */}
+      <header className="relative z-20 bg-white">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3 sm:gap-6">
+          <Logo />
+          <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-brand-900">
+            <a href="#" className="relative text-brand-600">
+              Home
+              <span className="absolute -bottom-2 left-0 right-0 h-[2px] rounded-full bg-brand-600" />
+            </a>
             <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Event Supplies</a>
             <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Categories</a>
             <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Products</a>
-<a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
+            <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
           </nav>
           <div className="flex items-center gap-3 sm:gap-6 text-brand-900">
-            <button className="hidden sm:inline-flex items-center gap-2 text-[15px] font-medium hover:text-brand-600 transition-colors">
+            <button className="hidden md:inline-flex items-center gap-2 text-[15px] font-medium hover:text-brand-600 transition-colors">
               <UserRound className="h-5 w-5" strokeWidth={1.75} />
               Sign In
             </button>
-            <div className="hidden sm:flex items-center gap-2 text-[15px]">
+            <div className="hidden md:flex items-center gap-2 text-[15px]">
               <button className="font-medium underline underline-offset-4 decoration-1">En</button>
               <span className="text-brand-300">|</span>
               <button className="text-muted-foreground hover:text-brand-900 transition-colors">Ar</button>
             </div>
-            <button aria-label="Wishlist" className="hover:text-brand-600 transition-colors">
+            <button aria-label="Wishlist" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
               <Heart className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
             </button>
             <a
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-2 rounded-full bg-brand-900 text-white px-5 py-2.5 text-[14px] font-medium hover:bg-brand-700 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-900 text-white px-4 py-2 sm:px-5 sm:py-2.5 text-[13px] sm:text-[14px] font-medium hover:bg-brand-700 transition-colors shadow-sm whitespace-nowrap"
             >
               Download App
             </a>
+            <button
+              type="button"
+              aria-label="Open menu"
+              aria-expanded={mobileMenuOpen}
+              onClick={() => setMobileMenuOpen(true)}
+              className="md:hidden inline-flex items-center justify-center h-10 w-10 -mr-1 rounded-full hover:bg-brand-100 transition-colors"
+            >
+              <Menu className="h-6 w-6" strokeWidth={1.75} />
+            </button>
           </div>
         </div>
       </header>
 
+      {/* MOBILE MENU */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-50 md:hidden">
+          <div
+            className="absolute inset-0 bg-brand-900/40 backdrop-blur-sm"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+          <div className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col">
+            <div className="flex items-center justify-between px-5 py-4 border-b border-brand-100">
+              <Logo />
+              <button
+                type="button"
+                aria-label="Close menu"
+                onClick={() => setMobileMenuOpen(false)}
+                className="inline-flex items-center justify-center h-10 w-10 rounded-full hover:bg-brand-100 transition-colors text-brand-900"
+              >
+                <X className="h-6 w-6" strokeWidth={1.75} />
+              </button>
+            </div>
+            <nav className="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-[17px] font-medium text-brand-900">
+              <a href="#" onClick={() => setMobileMenuOpen(false)} className="py-3 text-brand-600">Home</a>
+              <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Event Supplies</a>
+              <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Categories</a>
+              <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Products</a>
+              <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Blogs</a>
+              <div className="my-3 h-px bg-brand-100" />
+              <button className="flex items-center gap-3 py-3 text-left hover:text-brand-600 transition-colors">
+                <UserRound className="h-5 w-5" strokeWidth={1.75} />
+                Sign In
+              </button>
+              <button className="flex items-center gap-3 py-3 text-left hover:text-brand-600 transition-colors">
+                <Heart className="h-5 w-5" strokeWidth={1.75} />
+                Wishlist
+              </button>
+              <div className="flex items-center gap-2 py-3 text-[15px]">
+                <button className="font-medium underline underline-offset-4 decoration-1">En</button>
+                <span className="text-brand-300">|</span>
+                <button className="text-muted-foreground hover:text-brand-900 transition-colors">Ar</button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      )}
       {/* HERO — rounded card, soft faded background */}
       <section className="px-4 md:px-6">
         <div className="relative max-w-[1400px] mx-auto rounded-[2.5rem] overflow-hidden text-brand-900 border border-brand-200">
