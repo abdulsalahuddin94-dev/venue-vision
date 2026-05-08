@@ -381,10 +381,10 @@ function Index() {
             <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_25%_55%,rgba(255,255,255,0.55)_0%,transparent_70%)]" />
           </div>
 
-          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-8 sm:pt-14 md:pt-20 pb-10 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-6 md:gap-10 items-end">
+          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-6 sm:pt-14 md:pt-20 pb-8 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-6 md:gap-10 items-end">
             {/* Left: headline */}
             <div className="md:col-span-8">
-              <span className="hero-rise inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-medium text-brand-900 border border-white/80 shadow-sm" style={{ animationDelay: "80ms" }}>
+              <span className="hero-rise hidden sm:inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-medium text-brand-900 border border-white/80 shadow-sm" style={{ animationDelay: "80ms" }}>
                 <span className="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse" />
                 The celebration booking app
               </span>
