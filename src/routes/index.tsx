@@ -30,6 +30,8 @@ import {
   CheckCircle2,
   Headphones,
   Clock,
+  Menu,
+  X,
 } from "lucide-react";
 import milaLogo from "@/assets/mila-logo.png";
 import commercialRegister from "@/assets/commercial-register.png";
