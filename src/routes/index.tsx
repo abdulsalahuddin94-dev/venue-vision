@@ -812,7 +812,7 @@ function Index() {
           </div>
 
           <div className="flex justify-center md:justify-end">
-            <div className="flex flex-col gap-4 w-full max-w-[220px]">
+            <div className="flex flex-row md:flex-col gap-3 sm:gap-4 w-full max-w-[460px] md:max-w-[220px]">
               <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="block transition hover:opacity-90">
                 <img src={btnAppStore} alt="Download on the App Store" className="w-full h-auto" />
               </a>
