@@ -638,7 +638,7 @@ function Index() {
             </ol>
           </div>
 
-          <Reveal delay={400} className="mt-16 flex flex-wrap items-center justify-between gap-6 rounded-3xl bg-white border border-brand-200 px-6 sm:px-8 py-6">
+          <Reveal delay={400} className="mt-8 sm:mt-16 flex flex-wrap items-center justify-between gap-4 sm:gap-6 rounded-3xl bg-white border border-brand-200 px-5 sm:px-8 py-5 sm:py-6">
             <div className="flex items-center gap-4">
               <div className="flex -space-x-3">
                 {[avatar1, avatar2, avatar3].map((src, i) => (
