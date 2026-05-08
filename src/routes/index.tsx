@@ -690,7 +690,7 @@ function Index() {
               <p className="mt-4 sm:mt-5 text-sm sm:text-base text-white/85 max-w-md">
                 The last group chat about "where should we go" you'll ever need. Open the app, tap the night you want, walk in.
               </p>
-              <div className="mt-6 sm:mt-8"><StoreButtons tone="dark" /></div>
+              <div className="mt-6 sm:mt-8"><StoreButtons tone="dark" stackedOnMobile /></div>
               <div className="mt-5 sm:mt-6 flex items-center gap-2 text-xs sm:text-sm text-white/85">
                 <Zap className="h-4 w-4 text-white shrink-0" /> Instant confirmation · No account required to browse
               </div>
