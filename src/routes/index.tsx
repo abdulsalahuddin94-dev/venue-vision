@@ -591,18 +591,18 @@ function Index() {
         <div className="absolute -bottom-40 -right-32 h-[520px] w-[520px] rounded-full bg-[var(--accent-mint)]/40 blur-[120px]" />
         <div className="absolute inset-0 opacity-[0.08] [background-image:radial-gradient(var(--brand-400)_1px,transparent_1px)] [background-size:22px_22px]" />
 
-        <div className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
+        <div className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-12 sm:py-20 md:py-28">
           <Reveal className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-brand-600">
+            <span className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600">
               <span className="h-px w-8 bg-brand-400" /> How Mila works
             </span>
-            <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px]">
+            <h2 className="mt-3 sm:mt-4 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px]">
               From craving to{" "}
               <span className="italic text-brand-500">celebrating</span>
               <br />
               in under a minute.
             </h2>
-            <p className="mt-6 text-brand-800/70 max-w-xl text-base sm:text-lg">
+            <p className="mt-4 sm:mt-6 text-brand-800/70 max-w-xl text-sm sm:text-lg">
               Three taps. Zero spreadsheets. We turned the months-long planning circus into a 45-second flow.
             </p>
           </Reveal>
