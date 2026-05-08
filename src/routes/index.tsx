@@ -122,7 +122,7 @@ function Marquee({ items }: { items: string[] }) {
   const row = [...items, ...items];
   return (
     <div className="relative overflow-hidden border-y border-brand-200 bg-brand-100">
-      <div className="flex gap-8 py-2.5 animate-[marquee_40s_linear_infinite] whitespace-nowrap">
+      <div className="flex gap-8 py-2.5 animate-[marquee_22s_linear_infinite] whitespace-nowrap">
         {row.map((t, i) => (
           <span key={i} className="font-display text-base md:text-lg text-brand-800 inline-flex items-center gap-8">
             {t}
@@ -308,12 +308,19 @@ function Index() {
             </a>
             <button
               type="button"
-              aria-label="Open menu"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
-              onClick={() => setMobileMenuOpen(true)}
-              className="md:hidden inline-flex items-center justify-center h-10 w-10 -mr-1 rounded-full hover:bg-brand-100 transition-colors"
+              onClick={() => setMobileMenuOpen((v) => !v)}
+              className="md:hidden relative inline-flex items-center justify-center h-10 w-10 -mr-1 rounded-full hover:bg-brand-100 transition-colors"
             >
-              <Menu className="h-6 w-6" strokeWidth={1.75} />
+              <Menu
+                className={`absolute h-6 w-6 transition-all duration-300 ease-out ${mobileMenuOpen ? "opacity-0 rotate-90 scale-75" : "opacity-100 rotate-0 scale-100"}`}
+                strokeWidth={1.75}
+              />
+              <X
+                className={`absolute h-6 w-6 transition-all duration-300 ease-out ${mobileMenuOpen ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-75"}`}
+                strokeWidth={1.75}
+              />
             </button>
           </div>
         </div>
@@ -326,7 +333,7 @@ function Index() {
             className="absolute inset-0 bg-brand-900/40 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col">
+          <div className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col animate-slide-in-right">
             <div className="flex items-center justify-between px-5 py-4 border-b border-brand-100">
               <Logo />
               <button
@@ -335,7 +342,7 @@ function Index() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center h-10 w-10 rounded-full hover:bg-brand-100 transition-colors text-brand-900"
               >
-                <X className="h-6 w-6" strokeWidth={1.75} />
+                <X className="h-6 w-6 transition-transform duration-300 hover:rotate-90" strokeWidth={1.75} />
               </button>
             </div>
             <nav className="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-[17px] font-medium text-brand-900">
@@ -374,15 +381,15 @@ function Index() {
             <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_25%_55%,rgba(255,255,255,0.55)_0%,transparent_70%)]" />
           </div>
 
-          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-8 sm:pt-14 md:pt-20 pb-10 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-6 md:gap-10 items-end">
+          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-6 sm:pt-14 md:pt-20 pb-8 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-6 md:gap-10 items-end">
             {/* Left: headline */}
             <div className="md:col-span-8">
-              <span className="hero-rise inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-medium text-brand-900 border border-white/80 shadow-sm" style={{ animationDelay: "80ms" }}>
+              <span className="hero-rise hidden sm:inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-medium text-brand-900 border border-white/80 shadow-sm" style={{ animationDelay: "80ms" }}>
                 <span className="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse" />
                 The celebration booking app
               </span>
 
-              <h1 className="hero-rise mt-5 sm:mt-7 font-display tracking-[-0.02em] text-[30px] sm:text-[56px] md:text-[64px] lg:text-[72px] font-extrabold leading-[1.1] md:leading-[1.15] lg:leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
+              <h1 className="hero-rise mt-0 sm:mt-7 font-display tracking-[-0.02em] text-[26px] sm:text-[56px] md:text-[64px] lg:text-[72px] font-extrabold leading-[1.15] md:leading-[1.15] lg:leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
                 Book your perfect{" "}
                 <span className="italic text-brand-600">celebration</span>{" "}
                 in seconds.
@@ -416,7 +423,7 @@ function Index() {
             </div>
 
             {/* Right: stacked floating cards */}
-            <div className="md:col-span-4 space-y-4 md:pl-6 w-full self-end">
+            <div className="hidden md:block md:col-span-4 space-y-4 md:pl-6 w-full self-end">
               {/* Featured venue card */}
               <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-elegant)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-2xl floaty aspect-[4/5]">
                 <img src={IMG.featuredTonight} alt="Skyline Proposal Experience" className="absolute inset-0 h-full w-full object-cover" />
@@ -466,7 +473,7 @@ function Index() {
         </div>
 
         {/* Marquee */}
-        <div className="mt-10">
+        <div className="mt-5 sm:mt-10">
           <Marquee items={stickerWords} />
         </div>
       </section>
