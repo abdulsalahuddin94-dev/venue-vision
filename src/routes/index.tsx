@@ -340,13 +340,13 @@ function Index() {
       </header>
 
       {/* MOBILE MENU */}
-      {mobileMenuOpen && (
+      {mobileMenuMounted && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
-            className="absolute inset-0 bg-brand-900/40 backdrop-blur-sm"
+            className={`absolute inset-0 bg-brand-900/40 backdrop-blur-sm transition-opacity duration-300 ease-in-out ${mobileMenuShown ? "opacity-100" : "opacity-0"}`}
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col animate-slide-in-right">
+          <div className={`absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${mobileMenuShown ? "translate-x-0" : "translate-x-full"}`}>
             <div className="flex items-center justify-between px-5 py-4 border-b border-brand-100">
               <Logo />
               <button
