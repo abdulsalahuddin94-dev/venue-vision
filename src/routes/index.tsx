@@ -513,9 +513,9 @@ function Index() {
                 >
                   <ArrowUpRight className="h-4 w-4" />
                 </span>
-                <div className="absolute inset-x-5 bottom-5 text-white transition-transform duration-500 group-hover:-translate-y-1">
-                  <div className="font-display text-2xl md:text-3xl leading-tight">{m.label}</div>
-                  <div className="mt-1 text-xs text-white/75">120+ venues ready</div>
+                <div className="absolute inset-x-4 sm:inset-x-5 bottom-4 sm:bottom-5 text-white transition-transform duration-500 group-hover:-translate-y-1">
+                  <div className="font-display text-lg sm:text-2xl md:text-3xl leading-tight">{m.label}</div>
+                  <div className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-white/75">120+ venues ready</div>
                 </div>
               </Reveal>
             );
