@@ -502,7 +502,7 @@ function Index() {
                 key={m.label}
                 as="a"
                 delay={i * 90}
-                className={`group relative overflow-hidden rounded-[1.75rem] ${positions[i]} min-h-[220px] md:min-h-0 block transition-transform duration-500 hover:-translate-y-1`}
+                className={`group relative overflow-hidden rounded-[1.75rem] ${positions[i]} min-h-[180px] md:min-h-0 block transition-transform duration-500 hover:-translate-y-1`}
               >
                 <img src={m.img} alt={m.label} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-900/85 via-brand-900/15 to-transparent" />
