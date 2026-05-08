@@ -699,7 +699,7 @@ function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="relative text-white bg-[linear-gradient(135deg,var(--brand-700)_0%,var(--brand-500)_55%,var(--accent-violet)_100%)]">
+      <footer className="bg-brand-900 text-white">
         <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-10 py-12 sm:py-16 grid md:grid-cols-3 gap-10 md:gap-12 items-start">
           <div>
             <Logo light />
