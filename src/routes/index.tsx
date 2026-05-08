@@ -280,15 +280,6 @@ function Index() {
               Home
               <span className="absolute -bottom-2 left-0 right-0 h-[2px] rounded-full bg-brand-600" />
             </a>
-      {/* NAV */}
-      <header className="relative z-20 bg-white">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-3 sm:gap-6">
-          <Logo />
-          <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-brand-900">
-            <a href="#" className="relative text-brand-600">
-              Home
-              <span className="absolute -bottom-2 left-0 right-0 h-[2px] rounded-full bg-brand-600" />
-            </a>
             <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Event Supplies</a>
             <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Categories</a>
             <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Products</a>
