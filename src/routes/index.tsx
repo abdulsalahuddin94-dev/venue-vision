@@ -682,7 +682,7 @@ function Index() {
                 "I booked a surprise dinner for 12 people in under a minute. The experience was flawless from start to finish."
               </p>
               <div className="mt-2 sm:mt-3 text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-brand-700 font-semibold">
-                — Sarah J., Manhattan
+                — Ahmed Salem
               </div>
             </div>
           </Reveal>
