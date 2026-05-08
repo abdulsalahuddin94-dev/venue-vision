@@ -658,8 +658,8 @@ function Index() {
       </section>
 
 
-      <section className="px-5 sm:px-6 py-16 sm:py-20 md:py-28">
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+      <section className="px-5 sm:px-6 py-12 sm:py-20 md:py-28">
+        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center">
           <Reveal className="relative">
             <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5] max-w-[240px] sm:max-w-none mr-auto ml-0 sm:mx-auto">
               <img
