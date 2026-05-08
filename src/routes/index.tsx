@@ -82,18 +82,18 @@ function StoreButtons({ tone = "dark" }: { tone?: "dark" | "light" }) {
       : "bg-white text-brand-900 hover:bg-white/90";
   return (
     <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
-      <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-[8px] px-5 py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
-        <img src={appleLogo} alt="" aria-hidden className="h-5 w-5 object-contain" />
+      <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-[8px] px-3 py-2.5 sm:px-5 sm:py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
+        <img src={appleLogo} alt="" aria-hidden className="h-5 w-5 shrink-0 object-contain" />
         <span className="text-left leading-tight">
-          <span className="block text-[10px] uppercase tracking-wider opacity-70">Download on</span>
-          <span className="block text-sm font-semibold">App Store</span>
+          <span className="block text-[9px] sm:text-[10px] uppercase tracking-wider opacity-70">Download on</span>
+          <span className="block text-xs sm:text-sm font-semibold whitespace-nowrap">App Store</span>
         </span>
       </a>
-      <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-[8px] px-5 py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
-        <img src={googlePlayLogo} alt="" aria-hidden className="h-5 w-5 object-contain" />
+      <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-[8px] px-3 py-2.5 sm:px-5 sm:py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
+        <img src={googlePlayLogo} alt="" aria-hidden className="h-5 w-5 shrink-0 object-contain" />
         <span className="text-left leading-tight">
-          <span className="block text-[10px] uppercase tracking-wider opacity-70">Get it on</span>
-          <span className="block text-sm font-semibold">Google Play</span>
+          <span className="block text-[9px] sm:text-[10px] uppercase tracking-wider opacity-70">Get it on</span>
+          <span className="block text-xs sm:text-sm font-semibold whitespace-nowrap">Google Play</span>
         </span>
       </a>
     </div>
