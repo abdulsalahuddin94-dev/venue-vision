@@ -674,6 +674,7 @@ function Index() {
           <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-700)_0%,var(--brand-500)_55%,var(--accent-violet)_100%)]" />
 
           <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-white/15 blur-3xl blob" style={{ animationDelay: "-7s" }} />
+          <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: "rgba(232, 170, 78, 0.3)" }} />
 
 
           <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-6 sm:px-8 md:px-16 py-14 sm:py-20 text-white">
