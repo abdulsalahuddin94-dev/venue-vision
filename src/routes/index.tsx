@@ -697,22 +697,22 @@ function Index() {
               Mila is more than a booking app; it's your personal concierge for life's most important milestones. We handle the discovery, negotiation, and logistics.
             </p>
 
-            <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-8 max-w-lg">
+            <div className="mt-6 sm:mt-10 grid grid-cols-2 gap-4 sm:gap-8 max-w-lg">
               <div>
-                <span className="grid place-items-center h-10 w-10 rounded-full bg-brand-100 text-brand-700">
-                  <CheckCircle2 className="h-5 w-5" />
+                <span className="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-brand-100 text-brand-700">
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
                 </span>
-                <div className="mt-4 font-semibold text-brand-900">Curated Experiences</div>
-                <p className="mt-2 text-sm text-brand-800/70 leading-relaxed">
+                <div className="mt-3 sm:mt-4 font-semibold text-sm sm:text-base text-brand-900">Curated Experiences</div>
+                <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-brand-800/70 leading-relaxed">
                   Only the top 5% of venues make it onto Mila. Quality is guaranteed.
                 </p>
               </div>
               <div>
-                <span className="grid place-items-center h-10 w-10 rounded-full bg-brand-100 text-brand-700">
-                  <Headphones className="h-5 w-5" />
+                <span className="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-brand-100 text-brand-700">
+                  <Headphones className="h-4 w-4 sm:h-5 sm:w-5" />
                 </span>
-                <div className="mt-4 font-semibold text-brand-900">Concierge Support</div>
-                <p className="mt-2 text-sm text-brand-800/70 leading-relaxed">
+                <div className="mt-3 sm:mt-4 font-semibold text-sm sm:text-base text-brand-900">Concierge Support</div>
+                <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-brand-800/70 leading-relaxed">
                   24/7 priority support for every booking to ensure perfection.
                 </p>
               </div>
