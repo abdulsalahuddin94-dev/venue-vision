@@ -635,7 +635,7 @@ function Index() {
               Mila is more than a booking app; it's your personal concierge for life's most important milestones. We handle the discovery, negotiation, and logistics.
             </p>
 
-            <div className="mt-10 grid sm:grid-cols-2 gap-8 max-w-lg">
+            <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-8 max-w-lg">
               <div>
                 <span className="grid place-items-center h-10 w-10 rounded-full bg-brand-100 text-brand-700">
                   <CheckCircle2 className="h-5 w-5" />
