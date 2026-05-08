@@ -731,7 +731,7 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 sm:px-6 pb-16 sm:pb-20">
+      <section className="px-4 sm:px-6 pb-12 sm:pb-20">
         <div className="relative max-w-[1400px] mx-auto rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden border border-brand-700">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-700)_0%,var(--brand-500)_55%,var(--accent-violet)_100%)]" />
 
