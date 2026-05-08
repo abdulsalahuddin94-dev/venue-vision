@@ -722,7 +722,7 @@ function Index() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-brand-900 text-white px-6 py-3 text-sm font-medium hover:bg-brand-800 transition-colors shadow-sm"
+              className="mt-6 sm:mt-10 inline-flex items-center gap-2 rounded-full bg-brand-900 text-white px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-medium hover:bg-brand-800 transition-colors shadow-sm"
             >
               Download to Explore
             </a>
