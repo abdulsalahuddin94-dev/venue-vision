@@ -388,7 +388,7 @@ function Index() {
                 in seconds.
               </h1>
 
-              <p className="hero-rise mt-6 text-lg text-brand-900 max-w-xl font-medium" style={{ animationDelay: "420ms" }}>
+              <p className="hero-rise mt-4 sm:mt-6 text-sm sm:text-lg text-brand-900 max-w-xl font-medium" style={{ animationDelay: "420ms" }}>
                 From birthdays to date nights — discover and book ready-made experiences at top venues. No planning. Just moments.
               </p>
 
