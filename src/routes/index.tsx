@@ -192,9 +192,22 @@ function Index() {
     "celebrations",
   ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuMounted, setMobileMenuMounted] = useState(false);
+  const [mobileMenuShown, setMobileMenuShown] = useState(false);
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
+  }, [mobileMenuOpen]);
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      setMobileMenuMounted(true);
+      const r = requestAnimationFrame(() => setMobileMenuShown(true));
+      return () => cancelAnimationFrame(r);
+    } else {
+      setMobileMenuShown(false);
+      const t = setTimeout(() => setMobileMenuMounted(false), 350);
+      return () => clearTimeout(t);
+    }
   }, [mobileMenuOpen]);
   return (
     <main className="min-h-screen text-foreground overflow-hidden">
@@ -327,13 +340,13 @@ function Index() {
       </header>
 
       {/* MOBILE MENU */}
-      {mobileMenuOpen && (
+      {mobileMenuMounted && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
-            className="absolute inset-0 bg-brand-900/40 backdrop-blur-sm"
+            className={`absolute inset-0 bg-brand-900/40 backdrop-blur-sm transition-opacity duration-300 ease-in-out ${mobileMenuShown ? "opacity-100" : "opacity-0"}`}
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col animate-slide-in-right">
+          <div className={`absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${mobileMenuShown ? "translate-x-0" : "translate-x-full"}`}>
             <div className="flex items-center justify-between px-5 py-4 border-b border-brand-100">
               <Logo />
               <button
@@ -423,7 +436,7 @@ function Index() {
             </div>
 
             {/* Right: stacked floating cards */}
-            <div className="hidden md:block md:col-span-4 space-y-4 md:pl-6 w-full self-end">
+            <div className="md:col-span-4 space-y-3 sm:space-y-4 md:pl-6 w-full self-end max-w-[260px] sm:max-w-none mx-auto">
               {/* Featured venue card */}
               <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-elegant)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-2xl floaty aspect-[4/5]">
                 <img src={IMG.featuredTonight} alt="Skyline Proposal Experience" className="absolute inset-0 h-full w-full object-cover" />
