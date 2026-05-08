@@ -122,7 +122,7 @@ function Marquee({ items }: { items: string[] }) {
   const row = [...items, ...items];
   return (
     <div className="relative overflow-hidden border-y border-brand-200 bg-brand-100">
-      <div className="flex gap-8 py-2.5 animate-[marquee_40s_linear_infinite] whitespace-nowrap">
+      <div className="flex gap-8 py-2.5 animate-[marquee_22s_linear_infinite] whitespace-nowrap">
         {row.map((t, i) => (
           <span key={i} className="font-display text-base md:text-lg text-brand-800 inline-flex items-center gap-8">
             {t}
