@@ -374,7 +374,7 @@ function Index() {
             <div className="absolute inset-0 bg-[radial-gradient(70%_70%_at_25%_55%,rgba(255,255,255,0.55)_0%,transparent_70%)]" />
           </div>
 
-          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-10 sm:pt-14 md:pt-20 pb-12 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-8 md:gap-10 items-end">
+          <div className="relative z-10 px-5 sm:px-6 md:px-12 lg:px-16 pt-8 sm:pt-14 md:pt-20 pb-10 sm:pb-16 md:pb-20 grid md:grid-cols-12 gap-6 md:gap-10 items-end">
             {/* Left: headline */}
             <div className="md:col-span-8">
               <span className="hero-rise inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-4 py-1.5 text-xs font-medium text-brand-900 border border-white/80 shadow-sm" style={{ animationDelay: "80ms" }}>
@@ -382,13 +382,13 @@ function Index() {
                 The celebration booking app
               </span>
 
-              <h1 className="hero-rise mt-6 sm:mt-7 font-display tracking-[-0.02em] text-[40px] sm:text-[56px] md:text-[64px] lg:text-[72px] font-extrabold leading-[1.1] md:leading-[1.15] lg:leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
+              <h1 className="hero-rise mt-5 sm:mt-7 font-display tracking-[-0.02em] text-[30px] sm:text-[56px] md:text-[64px] lg:text-[72px] font-extrabold leading-[1.1] md:leading-[1.15] lg:leading-[110px] text-brand-900 [text-shadow:0_1px_2px_rgba(255,255,255,0.5)]" style={{ animationDelay: "220ms" }}>
                 Book your perfect{" "}
                 <span className="italic text-brand-600">celebration</span>{" "}
                 in seconds.
               </h1>
 
-              <p className="hero-rise mt-6 text-lg text-brand-900 max-w-xl font-medium" style={{ animationDelay: "420ms" }}>
+              <p className="hero-rise mt-4 sm:mt-6 text-sm sm:text-lg text-brand-900 max-w-xl font-medium" style={{ animationDelay: "420ms" }}>
                 From birthdays to date nights — discover and book ready-made experiences at top venues. No planning. Just moments.
               </p>
 
@@ -472,17 +472,17 @@ function Index() {
       </section>
 
       {/* MOMENTS — asymmetric */}
-      <section id="moments" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-10 md:mb-12">
+      <section id="moments" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-12 sm:py-20 md:py-28">
+        <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6 mb-8 md:mb-12">
           <Reveal>
-            <span className="text-xs uppercase tracking-[0.3em] text-brand-600">A moment for everything</span>
-            <h2 className="mt-3 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600">A moment for everything</span>
+            <h2 className="mt-2 sm:mt-3 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               What are we<br />
               <span className="italic text-brand-500">celebrating?</span>
             </h2>
           </Reveal>
           <Reveal delay={150}>
-            <p className="max-w-sm text-brand-800/70">
+            <p className="max-w-sm text-sm sm:text-base text-brand-800/70">
               Every category is a hand-picked playbook of venues, menus and surprises designed for that exact kind of night.
             </p>
           </Reveal>
@@ -502,7 +502,7 @@ function Index() {
                 key={m.label}
                 as="a"
                 delay={i * 90}
-                className={`group relative overflow-hidden rounded-[1.75rem] ${positions[i]} min-h-[220px] md:min-h-0 block transition-transform duration-500 hover:-translate-y-1`}
+                className={`group relative overflow-hidden rounded-[1.75rem] ${positions[i]} min-h-[180px] md:min-h-0 block transition-transform duration-500 hover:-translate-y-1`}
               >
                 <img src={m.img} alt={m.label} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-900/85 via-brand-900/15 to-transparent" />
@@ -513,9 +513,9 @@ function Index() {
                 >
                   <ArrowUpRight className="h-4 w-4" />
                 </span>
-                <div className="absolute inset-x-5 bottom-5 text-white transition-transform duration-500 group-hover:-translate-y-1">
-                  <div className="font-display text-2xl md:text-3xl leading-tight">{m.label}</div>
-                  <div className="mt-1 text-xs text-white/75">120+ venues ready</div>
+                <div className="absolute inset-x-4 sm:inset-x-5 bottom-4 sm:bottom-5 text-white transition-transform duration-500 group-hover:-translate-y-1">
+                  <div className="font-display text-lg sm:text-2xl md:text-3xl leading-tight">{m.label}</div>
+                  <div className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs text-white/75">120+ venues ready</div>
                 </div>
               </Reveal>
             );
@@ -524,11 +524,11 @@ function Index() {
       </section>
 
       {/* VENUES */}
-      <section id="venues" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-10 md:mb-12">
+      <section id="venues" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-12 sm:py-20 md:py-28">
+        <div className="flex items-end justify-between flex-wrap gap-4 sm:gap-6 mb-8 md:mb-12">
           <Reveal>
-            <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Hand-picked spots</span>
-            <h2 className="mt-3 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600">Hand-picked spots</span>
+            <h2 className="mt-2 sm:mt-3 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               Places that<br />
               <span className="italic text-brand-500">already get it.</span>
             </h2>
@@ -591,18 +591,18 @@ function Index() {
         <div className="absolute -bottom-40 -right-32 h-[520px] w-[520px] rounded-full bg-[var(--accent-mint)]/40 blur-[120px]" />
         <div className="absolute inset-0 opacity-[0.08] [background-image:radial-gradient(var(--brand-400)_1px,transparent_1px)] [background-size:22px_22px]" />
 
-        <div className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
+        <div className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-12 sm:py-20 md:py-28">
           <Reveal className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-brand-600">
+            <span className="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600">
               <span className="h-px w-8 bg-brand-400" /> How Mila works
             </span>
-            <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px]">
+            <h2 className="mt-3 sm:mt-4 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px]">
               From craving to{" "}
               <span className="italic text-brand-500">celebrating</span>
               <br />
               in under a minute.
             </h2>
-            <p className="mt-6 text-brand-800/70 max-w-xl text-base sm:text-lg">
+            <p className="mt-4 sm:mt-6 text-brand-800/70 max-w-xl text-sm sm:text-lg">
               Three taps. Zero spreadsheets. We turned the months-long planning circus into a 45-second flow.
             </p>
           </Reveal>
@@ -658,8 +658,8 @@ function Index() {
       </section>
 
 
-      <section className="px-5 sm:px-6 py-16 sm:py-20 md:py-28">
-        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+      <section className="px-5 sm:px-6 py-12 sm:py-20 md:py-28">
+        <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center">
           <Reveal className="relative">
             <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5] max-w-[240px] sm:max-w-none mr-auto ml-0 sm:mx-auto">
               <img
@@ -688,31 +688,31 @@ function Index() {
           </Reveal>
 
           <Reveal delay={120}>
-            <span className="text-xs uppercase tracking-[0.3em] text-brand-600 font-semibold">Exclusivity</span>
-            <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600 font-semibold">Exclusivity</span>
+            <h2 className="mt-3 sm:mt-4 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               Built for moments,{" "}
               <span className="italic text-brand-300">not for stress.</span>
             </h2>
-            <p className="mt-6 text-brand-800/75 max-w-md leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base text-brand-800/75 max-w-md leading-relaxed">
               Mila is more than a booking app; it's your personal concierge for life's most important milestones. We handle the discovery, negotiation, and logistics.
             </p>
 
-            <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-8 max-w-lg">
+            <div className="mt-6 sm:mt-10 grid grid-cols-2 gap-4 sm:gap-8 max-w-lg">
               <div>
-                <span className="grid place-items-center h-10 w-10 rounded-full bg-brand-100 text-brand-700">
-                  <CheckCircle2 className="h-5 w-5" />
+                <span className="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-brand-100 text-brand-700">
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
                 </span>
-                <div className="mt-4 font-semibold text-brand-900">Curated Experiences</div>
-                <p className="mt-2 text-sm text-brand-800/70 leading-relaxed">
+                <div className="mt-3 sm:mt-4 font-semibold text-sm sm:text-base text-brand-900">Curated Experiences</div>
+                <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-brand-800/70 leading-relaxed">
                   Only the top 5% of venues make it onto Mila. Quality is guaranteed.
                 </p>
               </div>
               <div>
-                <span className="grid place-items-center h-10 w-10 rounded-full bg-brand-100 text-brand-700">
-                  <Headphones className="h-5 w-5" />
+                <span className="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-brand-100 text-brand-700">
+                  <Headphones className="h-4 w-4 sm:h-5 sm:w-5" />
                 </span>
-                <div className="mt-4 font-semibold text-brand-900">Concierge Support</div>
-                <p className="mt-2 text-sm text-brand-800/70 leading-relaxed">
+                <div className="mt-3 sm:mt-4 font-semibold text-sm sm:text-base text-brand-900">Concierge Support</div>
+                <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-brand-800/70 leading-relaxed">
                   24/7 priority support for every booking to ensure perfection.
                 </p>
               </div>
@@ -722,7 +722,7 @@ function Index() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-brand-900 text-white px-6 py-3 text-sm font-medium hover:bg-brand-800 transition-colors shadow-sm"
+              className="mt-6 sm:mt-10 inline-flex items-center gap-2 rounded-full bg-brand-900 text-white px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-medium hover:bg-brand-800 transition-colors shadow-sm"
             >
               Download to Explore
             </a>
@@ -731,7 +731,7 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 sm:px-6 pb-16 sm:pb-20">
+      <section className="px-4 sm:px-6 pb-12 sm:pb-20">
         <div className="relative max-w-[1400px] mx-auto rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden border border-brand-700">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-700)_0%,var(--brand-500)_55%,var(--accent-violet)_100%)]" />
 
@@ -739,7 +739,7 @@ function Index() {
           <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: "rgba(232, 170, 78, 0.3)" }} />
 
 
-          <div className="relative grid grid-cols-[1.6fr_1fr] md:grid-cols-[1.3fr_1fr] gap-4 sm:gap-8 items-center px-5 sm:px-8 md:px-16 py-12 sm:py-20 text-white">
+          <div className="relative grid grid-cols-[1.6fr_1fr] md:grid-cols-[1.3fr_1fr] gap-3 sm:gap-8 items-center px-5 sm:px-8 md:px-16 py-10 sm:py-20 text-white">
             <Reveal>
               <span className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-white/80">Your moment, one tap away</span>
               <h2 className="mt-3 sm:mt-4 font-display text-[22px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
@@ -763,20 +763,20 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="bg-brand-900 text-white">
-        <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-10 py-12 sm:py-16 grid md:grid-cols-3 gap-10 md:gap-12 items-start">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-10 py-10 sm:py-16 grid md:grid-cols-3 gap-8 md:gap-12 items-start">
           <div>
             <Logo light />
-            <div className="mt-8 space-y-1 text-[15px] text-white/85 leading-relaxed">
+            <div className="mt-6 sm:mt-8 space-y-1 text-[13px] sm:text-[15px] text-white/85 leading-relaxed">
               <p>Mila Al-thakia for communication &amp;</p>
               <p>informations technology</p>
               <p>Saudi Arabia, Riyadh</p>
               <p className="pt-2">Contact us: <a href="mailto:info@mila.day" className="hover:text-[var(--accent-sun)]">info@mila.day</a></p>
             </div>
-            <p className="mt-10 text-sm text-white/60">© {new Date().getFullYear()} . All rights reserved.</p>
+            <p className="mt-6 sm:mt-10 text-xs sm:text-sm text-white/60">© {new Date().getFullYear()} . All rights reserved.</p>
           </div>
 
           <div className="text-center">
-            <h3 className="font-display text-2xl font-semibold">Quick Links</h3>
+            <h3 className="font-display text-xl sm:text-2xl font-semibold">Quick Links</h3>
             <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-[15px] text-white/90">
               <li><a href="#" className="hover:text-[var(--accent-sun)]">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-[var(--accent-sun)]">Terms &amp; Conditions</a></li>
