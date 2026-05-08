@@ -609,17 +609,17 @@ function Index() {
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 right-6 md:-right-10 w-[384px] max-w-[calc(100%-3rem)] rounded-2xl bg-white p-6 shadow-[var(--shadow-elegant)] border border-brand-100">
-              <div className="flex items-center gap-3">
-                <span className="grid place-items-center h-10 w-10 rounded-full bg-brand-100 text-brand-700">
-                  <Clock className="h-5 w-5" />
+            <div className="absolute -bottom-6 right-4 md:-right-10 w-[260px] sm:w-[320px] md:w-[384px] max-w-[calc(100%-2rem)] rounded-2xl bg-white p-4 sm:p-6 shadow-[var(--shadow-elegant)] border border-brand-100">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <span className="grid place-items-center h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-brand-100 text-brand-700">
+                  <Clock className="h-4 w-4 sm:h-5 sm:w-5" />
                 </span>
-                <div className="font-semibold text-brand-900">Instant Confirmation</div>
+                <div className="font-semibold text-brand-900 text-sm sm:text-base">Instant Confirmation</div>
               </div>
-              <p className="mt-3 text-sm text-brand-800/75 leading-relaxed">
+              <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-brand-800/75 leading-relaxed">
                 "I booked a surprise dinner for 12 people in under a minute. The experience was flawless from start to finish."
               </p>
-              <div className="mt-3 text-[11px] uppercase tracking-[0.25em] text-brand-700 font-semibold">
+              <div className="mt-2 sm:mt-3 text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-brand-700 font-semibold">
                 — Sarah J., Manhattan
               </div>
             </div>
