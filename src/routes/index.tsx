@@ -333,7 +333,7 @@ function Index() {
             className="absolute inset-0 bg-brand-900/40 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col">
+          <div className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-2xl flex flex-col animate-slide-in-right">
             <div className="flex items-center justify-between px-5 py-4 border-b border-brand-100">
               <Logo />
               <button
@@ -342,7 +342,7 @@ function Index() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center h-10 w-10 rounded-full hover:bg-brand-100 transition-colors text-brand-900"
               >
-                <X className="h-6 w-6" strokeWidth={1.75} />
+                <X className="h-6 w-6 transition-transform duration-300 hover:rotate-90" strokeWidth={1.75} />
               </button>
             </div>
             <nav className="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-[17px] font-medium text-brand-900">
