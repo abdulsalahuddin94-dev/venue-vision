@@ -191,6 +191,11 @@ function Index() {
     "girls night",
     "celebrations",
   ];
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileMenuOpen]);
   return (
     <main className="min-h-screen text-foreground overflow-hidden">
       <style>{`
