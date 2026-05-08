@@ -423,7 +423,7 @@ function Index() {
             </div>
 
             {/* Right: stacked floating cards */}
-            <div className="md:col-span-4 space-y-4 md:pl-6 w-full self-end">
+            <div className="hidden md:block md:col-span-4 space-y-4 md:pl-6 w-full self-end">
               {/* Featured venue card */}
               <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-elegant)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-2xl floaty aspect-[4/5]">
                 <img src={IMG.featuredTonight} alt="Skyline Proposal Experience" className="absolute inset-0 h-full w-full object-cover" />
