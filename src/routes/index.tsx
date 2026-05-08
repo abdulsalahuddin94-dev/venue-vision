@@ -677,23 +677,23 @@ function Index() {
           <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: "rgba(232, 170, 78, 0.3)" }} />
 
 
-          <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-6 sm:px-8 md:px-16 py-14 sm:py-20 text-white">
+          <div className="relative grid grid-cols-[1.6fr_1fr] md:grid-cols-[1.3fr_1fr] gap-4 sm:gap-8 items-center px-5 sm:px-8 md:px-16 py-12 sm:py-20 text-white">
             <Reveal>
-              <span className="text-xs uppercase tracking-[0.3em] text-white/80">Your moment, one tap away</span>
-              <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-white/80">Your moment, one tap away</span>
+              <h2 className="mt-3 sm:mt-4 font-display text-[26px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
                 Download Mila.<br />
                 <span className="italic text-white/90">Book the moment.</span>
               </h2>
-              <p className="mt-5 text-white/85 max-w-md">
+              <p className="mt-4 sm:mt-5 text-sm sm:text-base text-white/85 max-w-md">
                 The last group chat about "where should we go" you'll ever need. Open the app, tap the night you want, walk in.
               </p>
-              <div className="mt-8"><StoreButtons tone="dark" /></div>
-              <div className="mt-6 flex items-center gap-2 text-sm text-white/85">
-                <Zap className="h-4 w-4 text-white" /> Instant confirmation · No account required to browse
+              <div className="mt-6 sm:mt-8"><StoreButtons tone="dark" /></div>
+              <div className="mt-5 sm:mt-6 flex items-center gap-2 text-xs sm:text-sm text-white/85">
+                <Zap className="h-4 w-4 text-white shrink-0" /> Instant confirmation · No account required to browse
               </div>
             </Reveal>
-            <div className="relative h-[340px] sm:h-[420px] md:h-[520px]">
-              <img src={phone} alt="Mila app preview" loading="lazy" className="absolute inset-0 m-auto h-full w-auto drop-shadow-2xl floaty" />
+            <div className="relative h-full min-h-[260px] sm:min-h-[420px] md:min-h-[520px] -mr-8 sm:mr-0">
+              <img src={phone} alt="Mila app preview" loading="lazy" className="absolute inset-y-0 left-0 sm:inset-0 sm:m-auto h-full w-auto max-w-none drop-shadow-2xl floaty" />
             </div>
           </div>
         </div>
