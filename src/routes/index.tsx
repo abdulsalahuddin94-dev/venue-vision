@@ -547,7 +547,7 @@ function Index() {
           <div className="relative mt-10 sm:mt-20">
             <div className="hidden md:block absolute top-12 left-[8%] right-[8%] h-px bg-gradient-to-r from-transparent via-brand-300 to-transparent" />
 
-            <ol className="grid grid-cols-3 gap-2 sm:gap-6 md:gap-6">
+            <ol className="grid grid-cols-3 gap-2 sm:gap-6 md:gap-6 items-stretch">
               {steps.map((s, idx) => {
                 const Icon = s.icon;
                 return (
