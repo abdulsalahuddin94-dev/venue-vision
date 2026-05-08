@@ -551,7 +551,7 @@ function Index() {
               {steps.map((s, idx) => {
                 const Icon = s.icon;
                 return (
-                  <Reveal as="li" key={s.n} delay={idx * 140} className="group relative">
+                  <Reveal as="li" key={s.n} delay={idx * 140} className="group relative flex flex-col">
                     <div className="relative flex justify-center">
                       <div className="relative h-14 w-14 sm:h-24 sm:w-24 rounded-full bg-white border border-brand-200 flex items-center justify-center shadow-[0_10px_40px_-15px_rgba(80,40,120,0.3)] transition-all duration-500 group-hover:border-brand-500 group-hover:-translate-y-1">
                         <span className="font-display text-xl sm:text-4xl text-brand-700">{s.n}</span>
