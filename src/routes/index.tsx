@@ -482,11 +482,11 @@ function Index() {
               as="article"
               key={v.name}
               delay={i * 200}
-              className="group relative rounded-2xl sm:rounded-[2rem] bg-white cursor-pointer
+              className={`group relative rounded-2xl sm:rounded-[2rem] bg-white cursor-pointer
                 shadow-[0_2px_16px_-4px_rgba(80,40,120,0.10)]
                 transition-[transform,box-shadow] duration-[220ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]
                 hover:-translate-y-3
-                hover:shadow-[0_20px_48px_-8px_rgba(80,40,120,0.22),0_4px_16px_-4px_rgba(80,40,120,0.10)]"
+                hover:shadow-[0_20px_48px_-8px_rgba(80,40,120,0.22),0_4px_16px_-4px_rgba(80,40,120,0.10)]${(v as any).mobileOnly ? " md:hidden" : ""}`}
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-t-2xl sm:rounded-t-[2rem]">
                 <img
