@@ -475,7 +475,7 @@ function Index() {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
           {venues.map((v, i) => (
             <Reveal
               as="article"
