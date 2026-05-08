@@ -81,15 +81,15 @@ function StoreButtons({ tone = "dark" }: { tone?: "dark" | "light" }) {
       ? "bg-brand-900 text-white hover:bg-brand-800"
       : "bg-white text-brand-900 hover:bg-white/90";
   return (
-    <div className="flex flex-wrap gap-3">
-      <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex items-center gap-3 rounded-[8px] px-5 py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
+    <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
+      <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-[8px] px-5 py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
         <img src={appleLogo} alt="" aria-hidden className="h-5 w-5 object-contain" />
         <span className="text-left leading-tight">
           <span className="block text-[10px] uppercase tracking-wider opacity-70">Download on</span>
           <span className="block text-sm font-semibold">App Store</span>
         </span>
       </a>
-      <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex items-center gap-3 rounded-[8px] px-5 py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
+      <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-[8px] px-5 py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
         <img src={googlePlayLogo} alt="" aria-hidden className="h-5 w-5 object-contain" />
         <span className="text-left leading-tight">
           <span className="block text-[10px] uppercase tracking-wider opacity-70">Get it on</span>
