@@ -739,7 +739,7 @@ function Index() {
           <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: "rgba(232, 170, 78, 0.3)" }} />
 
 
-          <div className="relative grid grid-cols-[1.6fr_1fr] md:grid-cols-[1.3fr_1fr] gap-4 sm:gap-8 items-center px-5 sm:px-8 md:px-16 py-12 sm:py-20 text-white">
+          <div className="relative grid grid-cols-[1.6fr_1fr] md:grid-cols-[1.3fr_1fr] gap-3 sm:gap-8 items-center px-5 sm:px-8 md:px-16 py-10 sm:py-20 text-white">
             <Reveal>
               <span className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-white/80">Your moment, one tap away</span>
               <h2 className="mt-3 sm:mt-4 font-display text-[22px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
