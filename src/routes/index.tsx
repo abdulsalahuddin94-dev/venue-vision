@@ -688,12 +688,12 @@ function Index() {
           </Reveal>
 
           <Reveal delay={120}>
-            <span className="text-xs uppercase tracking-[0.3em] text-brand-600 font-semibold">Exclusivity</span>
-            <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600 font-semibold">Exclusivity</span>
+            <h2 className="mt-3 sm:mt-4 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               Built for moments,{" "}
               <span className="italic text-brand-300">not for stress.</span>
             </h2>
-            <p className="mt-6 text-brand-800/75 max-w-md leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base text-brand-800/75 max-w-md leading-relaxed">
               Mila is more than a booking app; it's your personal concierge for life's most important milestones. We handle the discovery, negotiation, and logistics.
             </p>
 
