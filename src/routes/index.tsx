@@ -793,16 +793,16 @@ function Index() {
                 </a>
               ))}
             </div>
-            <div className="mt-8 border-t border-white/15 pt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[14px] text-white/85">
-              <div className="flex items-center gap-3">
-                <img src={commercialRegister} alt="Saudi Commercial Register" className="h-10 w-10 object-contain" />
+            <div className="mt-8 border-t border-white/15 pt-6 grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-4 text-[12px] sm:text-[14px] text-white/85">
+              <div className="flex items-center gap-2 sm:gap-3 justify-center">
+                <img src={commercialRegister} alt="Saudi Commercial Register" className="h-9 w-9 sm:h-10 sm:w-10 object-contain shrink-0" />
                 <div className="text-left">
                   <div>Commercial Register</div>
                   <div className="font-semibold">7034008768</div>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <img src={vatLogo} alt="VAT" className="h-10 w-10 object-contain" />
+              <div className="flex items-center gap-2 sm:gap-3 justify-center">
+                <img src={vatLogo} alt="VAT" className="h-9 w-9 sm:h-10 sm:w-10 object-contain shrink-0" />
                 <div className="text-left">
                   <div>Tax Number</div>
                   <div className="font-semibold">311696590600003</div>
@@ -812,7 +812,7 @@ function Index() {
           </div>
 
           <div className="flex justify-center md:justify-end">
-            <div className="flex flex-col gap-4 w-full max-w-[220px]">
+            <div className="flex flex-row md:flex-col gap-3 sm:gap-4 w-full max-w-[460px] md:max-w-[220px]">
               <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" className="block transition hover:opacity-90">
                 <img src={btnAppStore} alt="Download on the App Store" className="w-full h-auto" />
               </a>
