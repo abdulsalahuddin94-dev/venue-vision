@@ -475,19 +475,19 @@ function Index() {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
           {venues.map((v, i) => (
             <Reveal
               as="article"
               key={v.name}
               delay={i * 200}
-              className="group relative rounded-[2rem] bg-white cursor-pointer
+              className="group relative rounded-2xl sm:rounded-[2rem] bg-white cursor-pointer
                 shadow-[0_2px_16px_-4px_rgba(80,40,120,0.10)]
                 transition-[transform,box-shadow] duration-[220ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]
                 hover:-translate-y-3
                 hover:shadow-[0_20px_48px_-8px_rgba(80,40,120,0.22),0_4px_16px_-4px_rgba(80,40,120,0.10)]"
             >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-t-[2rem]">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-t-2xl sm:rounded-t-[2rem]">
                 <img
                   src={v.img}
                   alt={v.name}
@@ -498,22 +498,22 @@ function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-brand-900/10 to-transparent
                   transition-opacity duration-[220ms] group-hover:from-brand-900/90" />
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 text-xs font-medium text-brand-800">
+                <span className="absolute top-2 left-2 sm:top-4 sm:left-4 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-white/95 text-[10px] sm:text-xs font-medium text-brand-800">
                   {v.tag}
                 </span>
-                <span className="absolute top-4 right-4 px-3 py-1 rounded-full bg-brand-900/70 backdrop-blur text-xs text-white">
+                <span className="absolute top-2 right-2 sm:top-4 sm:right-4 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-brand-900/70 backdrop-blur text-[10px] sm:text-xs text-white">
                   {v.price}
                 </span>
-                <div className="absolute inset-x-5 bottom-5 text-white
+                <div className="absolute inset-x-3 bottom-3 sm:inset-x-5 sm:bottom-5 text-white
                   transition-transform duration-[220ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]
                   group-hover:-translate-y-1">
-                  <div className="text-[10px] uppercase tracking-[0.25em] text-white/80">{v.sub} · {v.city}</div>
-                  <div className="mt-1 font-display text-3xl leading-tight">{v.name}</div>
+                  <div className="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-white/80">{v.sub} · {v.city}</div>
+                  <div className="mt-1 font-display text-lg sm:text-2xl md:text-3xl leading-tight">{v.name}</div>
                 </div>
               </div>
-              <div className="flex items-center p-5">
-                <div className="text-sm text-brand-800/80 inline-flex items-center gap-1.5">
-                  <Star className="h-4 w-4 fill-[var(--accent-sun)] text-[var(--accent-sun)]" /> 4.9 · 240+ celebrations
+              <div className="flex items-center p-3 sm:p-5">
+                <div className="text-[11px] sm:text-sm text-brand-800/80 inline-flex items-center gap-1 sm:gap-1.5">
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 fill-[var(--accent-sun)] text-[var(--accent-sun)]" /> 4.9 · 240+
                 </div>
               </div>
             </Reveal>
