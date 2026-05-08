@@ -472,11 +472,11 @@ function Index() {
       </section>
 
       {/* MOMENTS — asymmetric */}
-      <section id="moments" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-10 md:mb-12">
+      <section id="moments" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-12 sm:py-20 md:py-28">
+        <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6 mb-8 md:mb-12">
           <Reveal>
-            <span className="text-xs uppercase tracking-[0.3em] text-brand-600">A moment for everything</span>
-            <h2 className="mt-3 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600">A moment for everything</span>
+            <h2 className="mt-2 sm:mt-3 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               What are we<br />
               <span className="italic text-brand-500">celebrating?</span>
             </h2>
