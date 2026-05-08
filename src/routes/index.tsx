@@ -585,7 +585,7 @@ function Index() {
                 ))}
               </div>
               <div className="text-sm">
-                <div className="font-semibold text-brand-900">Joined by 50,000+ celebrators</div>
+                <div className="font-semibold text-brand-900">Joined by 10K+ celebrators</div>
                 <div className="text-brand-800/60 text-xs">Average flow time: 45 seconds</div>
               </div>
             </div>
