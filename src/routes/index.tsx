@@ -763,20 +763,20 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="bg-brand-900 text-white">
-        <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-10 py-12 sm:py-16 grid md:grid-cols-3 gap-10 md:gap-12 items-start">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-10 py-10 sm:py-16 grid md:grid-cols-3 gap-8 md:gap-12 items-start">
           <div>
             <Logo light />
-            <div className="mt-8 space-y-1 text-[15px] text-white/85 leading-relaxed">
+            <div className="mt-6 sm:mt-8 space-y-1 text-[13px] sm:text-[15px] text-white/85 leading-relaxed">
               <p>Mila Al-thakia for communication &amp;</p>
               <p>informations technology</p>
               <p>Saudi Arabia, Riyadh</p>
               <p className="pt-2">Contact us: <a href="mailto:info@mila.day" className="hover:text-[var(--accent-sun)]">info@mila.day</a></p>
             </div>
-            <p className="mt-10 text-sm text-white/60">© {new Date().getFullYear()} . All rights reserved.</p>
+            <p className="mt-6 sm:mt-10 text-xs sm:text-sm text-white/60">© {new Date().getFullYear()} . All rights reserved.</p>
           </div>
 
           <div className="text-center">
-            <h3 className="font-display text-2xl font-semibold">Quick Links</h3>
+            <h3 className="font-display text-xl sm:text-2xl font-semibold">Quick Links</h3>
             <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-[15px] text-white/90">
               <li><a href="#" className="hover:text-[var(--accent-sun)]">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-[var(--accent-sun)]">Terms &amp; Conditions</a></li>
