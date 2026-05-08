@@ -599,7 +599,7 @@ function Index() {
       <section className="px-5 sm:px-6 py-16 sm:py-20 md:py-28">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
           <Reveal className="relative">
-            <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5]">
+            <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5] max-w-[280px] sm:max-w-none mx-auto">
               <img
                 src={IMG.exclusivity}
                 alt="Friends celebrating at an exclusive venue"
