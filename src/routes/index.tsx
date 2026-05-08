@@ -598,8 +598,8 @@ function Index() {
 
       <section className="px-5 sm:px-6 py-16 sm:py-20 md:py-28">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
-          <Reveal className="relative translate-x-4 sm:translate-x-0">
-            <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5] max-w-[280px] sm:max-w-none mx-auto">
+          <Reveal className="relative">
+            <div className="relative rounded-[2rem] overflow-hidden shadow-[var(--shadow-soft)] aspect-[4/5] max-w-[240px] sm:max-w-none mr-auto ml-0 sm:mx-auto">
               <img
                 src={IMG.exclusivity}
                 alt="Friends celebrating at an exclusive venue"
@@ -609,7 +609,7 @@ function Index() {
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 right-4 md:-right-10 w-[260px] sm:w-[320px] md:w-[384px] max-w-[calc(100%-2rem)] rounded-2xl bg-white p-4 sm:p-6 shadow-[var(--shadow-elegant)] border border-brand-100">
+            <div className="absolute bottom-16 sm:-bottom-6 right-0 sm:right-4 md:-right-10 w-[240px] sm:w-[320px] md:w-[384px] max-w-[calc(100%-1rem)] rounded-2xl bg-white p-4 sm:p-6 shadow-[var(--shadow-elegant)] border border-brand-100">
               <div className="flex items-center gap-2 sm:gap-3">
                 <span className="grid place-items-center h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-brand-100 text-brand-700">
                   <Clock className="h-4 w-4 sm:h-5 sm:w-5" />
