@@ -192,9 +192,22 @@ function Index() {
     "celebrations",
   ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuMounted, setMobileMenuMounted] = useState(false);
+  const [mobileMenuShown, setMobileMenuShown] = useState(false);
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
+  }, [mobileMenuOpen]);
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      setMobileMenuMounted(true);
+      const r = requestAnimationFrame(() => setMobileMenuShown(true));
+      return () => cancelAnimationFrame(r);
+    } else {
+      setMobileMenuShown(false);
+      const t = setTimeout(() => setMobileMenuMounted(false), 350);
+      return () => clearTimeout(t);
+    }
   }, [mobileMenuOpen]);
   return (
     <main className="min-h-screen text-foreground overflow-hidden">
