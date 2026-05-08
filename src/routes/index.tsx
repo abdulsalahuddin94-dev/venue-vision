@@ -81,7 +81,7 @@ function StoreButtons({ tone = "dark" }: { tone?: "dark" | "light" }) {
       ? "bg-brand-900 text-white hover:bg-brand-800"
       : "bg-white text-brand-900 hover:bg-white/90";
   return (
-    <div className="reveal mt-16 flex-wrap rounded-3xl bg-white border border-brand-200 sm:px-8 py-6 is-visible flex items-start justify-center px-[16px] gap-[8px]">
+    <div className="flex flex-wrap gap-3">
       <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex items-center gap-3 rounded-[8px] px-5 py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
         <img src={appleLogo} alt="" aria-hidden className="h-5 w-5 object-contain" />
         <span className="text-left leading-tight">
