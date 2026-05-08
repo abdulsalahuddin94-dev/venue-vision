@@ -55,6 +55,7 @@ const venues = [
   { tag: "Luxury",   name: "The Velvet Room",  sub: "Fine Dining",  img: IMG.velvet,  city: "Riyadh",  price: "$$$" },
   { tag: "Family",   name: "Garden Lane Café", sub: "Café & Brunch", img: IMG.garden,  city: "Al Olaya", price: "$$" },
   { tag: "Romantic", name: "Skyline Terrace",  sub: "Rooftop Bar",  img: IMG.skyline, city: "KAFD",     price: "$$$" },
+  { tag: "Trendy",   name: "Aurora Lounge",    sub: "Cocktail Bar", img: IMG.velvet,  city: "Riyadh",   price: "$$",  mobileOnly: true },
 ];
 
 const steps = [
