@@ -561,7 +561,7 @@ function Index() {
                       </div>
                     </div>
 
-                    <div className="mt-3 sm:mt-8 rounded-2xl sm:rounded-3xl bg-white border border-brand-200 p-3 sm:p-7 transition-all duration-500 group-hover:shadow-[var(--shadow-soft)] group-hover:-translate-y-1 text-center">
+                    <div className="mt-3 sm:mt-8 flex-1 rounded-2xl sm:rounded-3xl bg-white border border-brand-200 p-3 sm:p-7 transition-all duration-500 group-hover:shadow-[var(--shadow-soft)] group-hover:-translate-y-1 text-center">
                       <div className="flex items-center gap-1 sm:gap-2 justify-center text-[8px] sm:text-[10px] uppercase tracking-[0.18em] sm:tracking-[0.28em] text-brand-600 font-semibold">
                         <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 rounded-full bg-brand-500" />
                         <span className="truncate">Step {s.n} · {s.time}</span>
