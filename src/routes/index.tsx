@@ -524,11 +524,11 @@ function Index() {
       </section>
 
       {/* VENUES */}
-      <section id="venues" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-16 sm:py-20 md:py-28">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-10 md:mb-12">
+      <section id="venues" className="relative max-w-[1400px] mx-auto px-5 sm:px-6 py-12 sm:py-20 md:py-28">
+        <div className="flex items-end justify-between flex-wrap gap-4 sm:gap-6 mb-8 md:mb-12">
           <Reveal>
-            <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Hand-picked spots</span>
-            <h2 className="mt-3 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-brand-600">Hand-picked spots</span>
+            <h2 className="mt-2 sm:mt-3 font-display text-[28px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
               Places that<br />
               <span className="italic text-brand-500">already get it.</span>
             </h2>
