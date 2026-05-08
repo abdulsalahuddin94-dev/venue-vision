@@ -308,12 +308,19 @@ function Index() {
             </a>
             <button
               type="button"
-              aria-label="Open menu"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
-              onClick={() => setMobileMenuOpen(true)}
-              className="md:hidden inline-flex items-center justify-center h-10 w-10 -mr-1 rounded-full hover:bg-brand-100 transition-colors"
+              onClick={() => setMobileMenuOpen((v) => !v)}
+              className="md:hidden relative inline-flex items-center justify-center h-10 w-10 -mr-1 rounded-full hover:bg-brand-100 transition-colors"
             >
-              <Menu className="h-6 w-6" strokeWidth={1.75} />
+              <Menu
+                className={`absolute h-6 w-6 transition-all duration-300 ease-out ${mobileMenuOpen ? "opacity-0 rotate-90 scale-75" : "opacity-100 rotate-0 scale-100"}`}
+                strokeWidth={1.75}
+              />
+              <X
+                className={`absolute h-6 w-6 transition-all duration-300 ease-out ${mobileMenuOpen ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-75"}`}
+                strokeWidth={1.75}
+              />
             </button>
           </div>
         </div>
