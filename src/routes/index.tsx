@@ -544,30 +544,30 @@ function Index() {
             </p>
           </Reveal>
 
-          <div className="relative mt-20">
+          <div className="relative mt-10 sm:mt-20">
             <div className="hidden md:block absolute top-12 left-[8%] right-[8%] h-px bg-gradient-to-r from-transparent via-brand-300 to-transparent" />
 
-            <ol className="grid md:grid-cols-3 gap-8 md:gap-6">
+            <ol className="grid grid-cols-3 gap-2 sm:gap-6 md:gap-6">
               {steps.map((s, idx) => {
                 const Icon = s.icon;
                 return (
                   <Reveal as="li" key={s.n} delay={idx * 140} className="group relative">
-                    <div className="relative flex md:justify-center">
-                      <div className="relative h-24 w-24 rounded-full bg-white border border-brand-200 flex items-center justify-center shadow-[0_10px_40px_-15px_rgba(80,40,120,0.3)] transition-all duration-500 group-hover:border-brand-500 group-hover:-translate-y-1">
-                        <span className="font-display text-4xl text-brand-700">{s.n}</span>
-                        <span className="absolute -bottom-2 -right-2 h-9 w-9 rounded-full bg-brand-900 text-[var(--accent-sun)] flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                          <Icon className="h-4 w-4" strokeWidth={2.25} />
+                    <div className="relative flex justify-center">
+                      <div className="relative h-14 w-14 sm:h-24 sm:w-24 rounded-full bg-white border border-brand-200 flex items-center justify-center shadow-[0_10px_40px_-15px_rgba(80,40,120,0.3)] transition-all duration-500 group-hover:border-brand-500 group-hover:-translate-y-1">
+                        <span className="font-display text-xl sm:text-4xl text-brand-700">{s.n}</span>
+                        <span className="absolute -bottom-1.5 -right-1.5 sm:-bottom-2 sm:-right-2 h-6 w-6 sm:h-9 sm:w-9 rounded-full bg-brand-900 text-[var(--accent-sun)] flex items-center justify-center shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                          <Icon className="h-3 w-3 sm:h-4 sm:w-4" strokeWidth={2.25} />
                         </span>
                       </div>
                     </div>
 
-                    <div className="mt-8 rounded-3xl bg-white border border-brand-200 p-7 transition-all duration-500 group-hover:shadow-[var(--shadow-soft)] group-hover:-translate-y-1 md:text-center">
-                      <div className="flex items-center gap-2 md:justify-center text-[10px] uppercase tracking-[0.28em] text-brand-600 font-semibold">
-                        <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-                        Step {s.n} · {s.time}
+                    <div className="mt-3 sm:mt-8 rounded-2xl sm:rounded-3xl bg-white border border-brand-200 p-3 sm:p-7 transition-all duration-500 group-hover:shadow-[var(--shadow-soft)] group-hover:-translate-y-1 text-center">
+                      <div className="flex items-center gap-1 sm:gap-2 justify-center text-[8px] sm:text-[10px] uppercase tracking-[0.18em] sm:tracking-[0.28em] text-brand-600 font-semibold">
+                        <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 rounded-full bg-brand-500" />
+                        <span className="truncate">Step {s.n} · {s.time}</span>
                       </div>
-                      <h3 className="mt-3 font-display text-3xl text-brand-900">{s.title}</h3>
-                      <p className="mt-3 text-brand-800/70 text-sm leading-relaxed md:max-w-[28ch] md:mx-auto">{s.desc}</p>
+                      <h3 className="mt-2 sm:mt-3 font-display text-base sm:text-3xl text-brand-900 leading-tight">{s.title}</h3>
+                      <p className="mt-2 sm:mt-3 text-brand-800/70 text-[11px] sm:text-sm leading-relaxed md:max-w-[28ch] md:mx-auto hidden sm:block">{s.desc}</p>
                     </div>
                   </Reveal>
                 );
