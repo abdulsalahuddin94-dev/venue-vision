@@ -670,25 +670,25 @@ function Index() {
 
       {/* CTA */}
       <section className="px-4 sm:px-6 pb-16 sm:pb-20">
-        <div className="relative max-w-[1400px] mx-auto rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden bg-brand-100 border border-brand-200">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-100)_0%,var(--accent-blush)_45%,var(--accent-mint)_100%)] opacity-90" />
-          
-          <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-[var(--brand-300)]/50 blur-3xl blob" style={{ animationDelay: "-7s" }} />
+        <div className="relative max-w-[1400px] mx-auto rounded-[1.75rem] sm:rounded-[2.5rem] overflow-hidden border border-brand-700">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,var(--brand-700)_0%,var(--brand-500)_55%,var(--accent-violet)_100%)]" />
+
+          <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-white/15 blur-3xl blob" style={{ animationDelay: "-7s" }} />
 
 
-          <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-6 sm:px-8 md:px-16 py-14 sm:py-20 text-brand-900">
+          <div className="relative grid md:grid-cols-[1.3fr_1fr] gap-8 items-center px-6 sm:px-8 md:px-16 py-14 sm:py-20 text-white">
             <Reveal>
-              <span className="text-xs uppercase tracking-[0.3em] text-brand-600">Your moment, one tap away</span>
+              <span className="text-xs uppercase tracking-[0.3em] text-white/80">Your moment, one tap away</span>
               <h2 className="mt-4 font-display text-[36px] sm:text-[44px] md:text-[56px] font-bold leading-[1.1] md:leading-[60px] tracking-tight">
                 Download Mila.<br />
-                <span className="italic text-brand-500">Book the moment.</span>
+                <span className="italic text-white/90">Book the moment.</span>
               </h2>
-              <p className="mt-5 text-brand-800/75 max-w-md">
+              <p className="mt-5 text-white/85 max-w-md">
                 The last group chat about "where should we go" you'll ever need. Open the app, tap the night you want, walk in.
               </p>
               <div className="mt-8"><StoreButtons tone="dark" /></div>
-              <div className="mt-6 flex items-center gap-2 text-sm text-brand-800/75">
-                <Zap className="h-4 w-4 text-brand-600" /> Instant confirmation · No account required to browse
+              <div className="mt-6 flex items-center gap-2 text-sm text-white/85">
+                <Zap className="h-4 w-4 text-white" /> Instant confirmation · No account required to browse
               </div>
             </Reveal>
             <div className="relative h-[340px] sm:h-[420px] md:h-[520px]">
