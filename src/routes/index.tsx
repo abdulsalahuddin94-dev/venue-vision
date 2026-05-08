@@ -473,7 +473,7 @@ function Index() {
         </div>
 
         {/* Marquee */}
-        <div className="mt-10">
+        <div className="mt-5 sm:mt-10">
           <Marquee items={stickerWords} />
         </div>
       </section>
