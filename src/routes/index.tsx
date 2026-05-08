@@ -76,13 +76,16 @@ const INSTAGRAM_URL = "https://www.instagram.com/mila.celebrations";
 const TIKTOK_URL = "https://www.tiktok.com/@mila.celebrations";
 const LINKEDIN_URL = "https://www.linkedin.com/company/mila-celebration/posts/?feedView=all";
 
-function StoreButtons({ tone = "dark" }: { tone?: "dark" | "light" }) {
+function StoreButtons({ tone = "dark", stackedOnMobile = false }: { tone?: "dark" | "light"; stackedOnMobile?: boolean }) {
   const cls =
     tone === "dark"
       ? "bg-brand-900 text-white hover:bg-brand-800"
       : "bg-white text-brand-900 hover:bg-white/90";
+  const wrapCls = stackedOnMobile
+    ? "flex flex-col gap-3 w-full sm:w-auto sm:flex-row sm:flex-wrap"
+    : "grid grid-cols-2 gap-3 w-full sm:w-auto sm:flex sm:flex-wrap";
   return (
-    <div className="grid grid-cols-2 gap-3 w-full sm:w-auto sm:flex sm:flex-wrap">
+    <div className={wrapCls}>
       <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={`group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-[8px] px-3 py-2.5 sm:px-5 sm:py-3 ${cls} transition shadow-[var(--shadow-soft)]`}>
         <img src={appleLogo} alt="" aria-hidden className="h-5 w-5 shrink-0 object-contain" />
         <span className="text-left leading-tight">
@@ -687,7 +690,7 @@ function Index() {
               <p className="mt-4 sm:mt-5 text-sm sm:text-base text-white/85 max-w-md">
                 The last group chat about "where should we go" you'll ever need. Open the app, tap the night you want, walk in.
               </p>
-              <div className="mt-6 sm:mt-8"><StoreButtons tone="dark" /></div>
+              <div className="mt-6 sm:mt-8"><StoreButtons tone="dark" stackedOnMobile /></div>
               <div className="mt-5 sm:mt-6 flex items-center gap-2 text-xs sm:text-sm text-white/85">
                 <Zap className="h-4 w-4 text-white shrink-0" /> Instant confirmation · No account required to browse
               </div>
