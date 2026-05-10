@@ -309,6 +309,12 @@ function Index() {
               <span className="text-brand-300">|</span>
               <button className="text-muted-foreground hover:text-brand-900 transition-colors">Ar</button>
             </div>
+            <button aria-label="Cart" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
+              <ShoppingBag className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
+            </button>
+            <button aria-label="Wishlist" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
+              <Heart className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
+            </button>
             <a
               href={APP_STORE_URL}
               target="_blank"
@@ -318,12 +324,6 @@ function Index() {
             >
               Download App
             </a>
-            <button aria-label="Cart" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
-              <ShoppingBag className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
-            </button>
-            <button aria-label="Wishlist" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
-              <Heart className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
-            </button>
             <button
               type="button"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
