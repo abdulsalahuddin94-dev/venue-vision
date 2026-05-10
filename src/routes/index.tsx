@@ -32,6 +32,7 @@ import {
   Clock,
   Menu,
   X,
+  ShoppingBag,
 } from "lucide-react";
 import milaLogo from "@/assets/mila-logo.png";
 import commercialRegister from "@/assets/commercial-register.png";
@@ -293,9 +294,9 @@ function Index() {
               Home
               <span className="absolute -bottom-2 left-0 right-0 h-[2px] rounded-full bg-brand-600" />
             </a>
-            <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Event Supplies</a>
             <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Categories</a>
             <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Products</a>
+            <a href="https://milacelebrations.com/en/vendors" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Join as Vendor</a>
             <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
           </nav>
           <div className="flex items-center gap-3 sm:gap-6 text-brand-900">
@@ -308,17 +309,21 @@ function Index() {
               <span className="text-brand-300">|</span>
               <button className="text-muted-foreground hover:text-brand-900 transition-colors">Ar</button>
             </div>
-            <button aria-label="Wishlist" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
-              <Heart className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
-            </button>
             <a
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-brand-900 text-white px-4 py-2 sm:px-5 sm:py-2.5 text-[13px] sm:text-[14px] font-medium hover:bg-brand-700 transition-colors shadow-sm whitespace-nowrap"
+              className="inline-flex items-center gap-2 rounded-full px-4 py-2 sm:px-5 sm:py-2.5 text-[13px] sm:text-[14px] font-medium transition-opacity hover:opacity-90 shadow-sm whitespace-nowrap"
+              style={{ backgroundColor: "#E0B6FF", color: "#3C0D52" }}
             >
               Download App
             </a>
+            <button aria-label="Cart" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
+              <ShoppingBag className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
+            </button>
+            <button aria-label="Wishlist" className="hidden md:inline-flex hover:text-brand-600 transition-colors">
+              <Heart className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.75} />
+            </button>
             <button
               type="button"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
@@ -360,9 +365,9 @@ function Index() {
             </div>
             <nav className="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-[17px] font-medium text-brand-900">
               <a href="#" onClick={() => setMobileMenuOpen(false)} className="py-3 text-brand-600">Home</a>
-              <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Event Supplies</a>
               <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Categories</a>
               <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Products</a>
+              <a href="https://milacelebrations.com/en/vendors" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Join as Vendor</a>
               <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Blogs</a>
               <div className="my-3 h-px bg-brand-100" />
               <button className="flex items-center gap-3 py-3 text-left hover:text-brand-600 transition-colors">
