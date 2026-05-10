@@ -293,9 +293,9 @@ function Index() {
               Home
               <span className="absolute -bottom-2 left-0 right-0 h-[2px] rounded-full bg-brand-600" />
             </a>
-            <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Event Supplies</a>
             <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Categories</a>
             <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Products</a>
+            <a href="https://milacelebrations.com/en/vendors" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Join as Vendor</a>
             <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="hover:text-brand-600 transition-colors">Blogs</a>
           </nav>
           <div className="flex items-center gap-3 sm:gap-6 text-brand-900">
