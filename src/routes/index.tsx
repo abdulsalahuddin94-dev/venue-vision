@@ -365,9 +365,9 @@ function Index() {
             </div>
             <nav className="flex-1 overflow-y-auto px-5 py-6 flex flex-col gap-1 text-[17px] font-medium text-brand-900">
               <a href="#" onClick={() => setMobileMenuOpen(false)} className="py-3 text-brand-600">Home</a>
-              <a href="https://milacelebrations.com/en" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Event Supplies</a>
               <a href="https://milacelebrations.com/en/categories" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Categories</a>
               <a href="https://milacelebrations.com/en/items" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Products</a>
+              <a href="https://milacelebrations.com/en/vendors" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Join as Vendor</a>
               <a href="https://milacelebrations.com/en/blogs" target="_blank" rel="noopener noreferrer" className="py-3 hover:text-brand-600 transition-colors">Blogs</a>
               <div className="my-3 h-px bg-brand-100" />
               <button className="flex items-center gap-3 py-3 text-left hover:text-brand-600 transition-colors">
