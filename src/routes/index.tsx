@@ -5,10 +5,11 @@ import phone from "@/assets/m-phone.png";
 import graduationMen from "@/assets/m-graduations.jpg";
 import engagementImg from "@/assets/m-engagement.jpg";
 import gatheringsImg from "@/assets/m-gatherings.jpg";
+import datenightImg from "@/assets/m-datenight.jpg";
 
 const IMG = {
   birthdays:      "https://images.unsplash.com/photo-1577998474517-7eeeed4e448a?auto=format&fit=crop&w=800&q=80",
-  datenight:      "https://images.unsplash.com/photo-1639244132045-94c307ff4bfc?auto=format&fit=crop&w=800&q=80",
+  datenight:      datenightImg,
   graduations:    graduationMen,
   proposals:      engagementImg,
   gatherings:     gatheringsImg,
