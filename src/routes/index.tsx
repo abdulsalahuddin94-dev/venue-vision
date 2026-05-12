@@ -4,13 +4,14 @@ import heroVideo from "@/assets/hero-bg.mp4";
 import phone from "@/assets/m-phone.png";
 import graduationMen from "@/assets/m-graduations.jpg";
 import engagementImg from "@/assets/m-engagement.jpg";
+import gatheringsImg from "@/assets/m-gatherings.jpg";
 
 const IMG = {
   birthdays:      "https://images.unsplash.com/photo-1577998474517-7eeeed4e448a?auto=format&fit=crop&w=800&q=80",
   datenight:      "https://images.unsplash.com/photo-1639244132045-94c307ff4bfc?auto=format&fit=crop&w=800&q=80",
   graduations:    graduationMen,
   proposals:      engagementImg,
-  gatherings:     "https://images.unsplash.com/photo-1519671282429-b44660ead0a7?auto=format&fit=crop&w=800&q=80",
+  gatherings:     gatheringsImg,
   velvet:         "https://images.unsplash.com/photo-1616669944447-d65d41a222bd?auto=format&fit=crop&w=800&q=80",
   garden:         "https://images.unsplash.com/photo-1744330311965-ca7342d73512?auto=format&fit=crop&w=800&q=80",
   skyline:        "https://images.unsplash.com/photo-1621275471769-e6aa344546d5?auto=format&fit=crop&w=800&q=80",
