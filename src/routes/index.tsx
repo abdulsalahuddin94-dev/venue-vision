@@ -2,11 +2,12 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type ReactNode, type CSSProperties } from "react";
 import heroVideo from "@/assets/hero-bg.mp4";
 import phone from "@/assets/m-phone.png";
+import graduationMen from "@/assets/m-graduations.jpg";
 
 const IMG = {
   birthdays:      "https://images.unsplash.com/photo-1577998474517-7eeeed4e448a?auto=format&fit=crop&w=800&q=80",
   datenight:      "https://images.unsplash.com/photo-1639244132045-94c307ff4bfc?auto=format&fit=crop&w=800&q=80",
-  graduations:    "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80",
+  graduations:    graduationMen,
   proposals:      "https://images.unsplash.com/photo-1542810185-a9c0362dcff4?auto=format&fit=crop&w=800&q=80",
   gatherings:     "https://images.unsplash.com/photo-1519671282429-b44660ead0a7?auto=format&fit=crop&w=800&q=80",
   velvet:         "https://images.unsplash.com/photo-1616669944447-d65d41a222bd?auto=format&fit=crop&w=800&q=80",
