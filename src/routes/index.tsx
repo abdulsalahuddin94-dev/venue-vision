@@ -6,9 +6,10 @@ import graduationMen from "@/assets/m-graduations.jpg";
 import engagementImg from "@/assets/m-engagement.jpg";
 import gatheringsImg from "@/assets/m-gatherings.jpg";
 import datenightImg from "@/assets/m-datenight.jpg";
+import birthdaysImg from "@/assets/m-birthdays.jpg";
 
 const IMG = {
-  birthdays:      "https://images.unsplash.com/photo-1577998474517-7eeeed4e448a?auto=format&fit=crop&w=800&q=80",
+  birthdays:      birthdaysImg,
   datenight:      datenightImg,
   graduations:    graduationMen,
   proposals:      engagementImg,
