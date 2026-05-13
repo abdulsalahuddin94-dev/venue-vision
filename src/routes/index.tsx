@@ -7,6 +7,7 @@ import engagementImg from "@/assets/m-engagement.jpg";
 import gatheringsImg from "@/assets/m-gatherings.jpg";
 import datenightImg from "@/assets/m-datenight.jpg";
 import birthdaysImg from "@/assets/m-birthdays.jpg";
+import exclusivityImg from "@/assets/exclusivity-wedding.jpg";
 
 const IMG = {
   birthdays:      birthdaysImg,
